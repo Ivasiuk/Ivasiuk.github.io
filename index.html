@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="todoListApp">
+<head>
+    <title>Todos</title>
+    <script src="Libraries/angular.js"></script>
+    <link href="Libraries/bootstrap.css" rel="stylesheet" />
+    <link href="Libraries/bootstrap-theme.css" rel="stylesheet" />
+
+    <script>
+        // Модель
+
+        var model = {
+            left: "",
+            todos: []
+        };
+
+        // Модуль
+
+        var todoListApp = angular.module("todoListApp", []);
+
+        // Контроллер
+
+        todoListApp.controller("TodoListCtrl", function ($scope) {
+
+            $scope.data = model;
+            function left (){
+               
+                for (var i = 0, n = 0; i < $scope.data.todos.length; i++){
+                    if (!$scope.data.todos[i].passed) {n++};
+                };
+		if (n == 0){return ''}
+		else if (n == 1){
+                    return '1 item left';
+                } else {
+                    return n + ' items left';
+                };
+            }
+
+            // Обработчик нажатия по кнопке
+            $scope.addNewTodo = function () {
+console.log($scope.todoName );
+		if($scope.todoName == undefined || "") {return}
+		else {
+                	$scope.data.todos.push({
+                 	   id: $scope.data.todos.length + 1,
+                  	  name: $scope.todoName,
+                  	  passed: false
+                	});
+		};
+
+                $scope.todoName = undefined ;
+                $scope.data.left = left();
+
+                
+            }
+
+            $scope.showText = function (passed) {
+		$scope.data.left = left();
+                return passed ? "Done" : "Not done";
+            }
+
+            $scope.setStyle = function (passed) {
+                return passed ? "color:green" : "color:red; font-weight: bold";
+            }
+
+           
+	    $scope.sortNumber = function(){
+		$scope.data.todos.sort(compareNum);
+		function compareNum (a, b){
+		    var r=0;
+  	   	    if (a.id > b.id) { r = 1; }
+         	    if (a.id < b.id) { r = -1; }
+  		    return r;
+		};
+	    };
+	    $scope.sortName = function(){
+		$scope.data.todos.sort(compareNum);
+		function compareNum (a, b){
+		    var r=0;
+  	   	    if (a.name > b.name) { r = 1; }
+         	    if (a.name < b.name) { r = -1; }
+  		    return r;
+	        };
+	    };
+	    $scope.sortProgress = function(){
+		$scope.data.todos.sort(compareNum);
+		function compareNum (a, b){
+		    var r=0;
+  	   	    if (a.passed > b.passed) { r = 1; }
+         	    if (a.passed < b.passed) { r = -1; }
+  		    return r;
+	        };
+	    };		
+        });
+
+    </script>
+
+</head>
+
+<body ng-controller="TodoListCtrl">
+    <div class="container">
+        <div class="page-header">
+            <h1>
+                TODOS
+            </h1>            
+        </div>
+        <div class="panel">
+            <div class="input-group">
+                <input placeholder="What needs to be done?" class="form-control" ng-model="todoName" />
+                <span class="input-group-btn">
+                    <button class="btn btn-default" ng-click="addNewTodo()">Add</button>
+                </span>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="btn-info" ng-click="sortNumber()">№</th>
+                        <th class="btn-info" ng-click="sortName()">Task</th>
+                        <th style="background-image: linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);"></th>
+                        <th class="btn-info" style="width: 103px;" ng-click="sortProgress()">Progress</th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="todo in data.todos">
+                        <td>{{todo.id}}</td>    
+                        <td>{{todo.name}}</td>
+                        <!-- CheckBox чрез директиву ng-model связан со свойством passed -->
+                        <td><input type="checkbox" ng-model="todo.passed" /></td>
+                        <td>
+                            <span style="{{setStyle(todo.passed)}}">
+                                {{showText(todo.passed)}}
+                            </span>
+                        </td>                         
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+	<div>
+            
+            <h4 style="color: darkgrey;"> {{data.left}}</h4>
+        </div>
+    </div>
+</body>
+</html>
