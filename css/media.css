@@ -1,0 +1,178 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+	.row1 .title_block .loading{
+    right: -72px;
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}	
+	nav{
+		height: 56px;
+	}
+
+	.menu-btn{
+	height: 40px;
+    width: 40px;
+    /* background-color: red; */
+    border-radius: 10%;
+    border: 2px solid #fff;
+	}	
+
+	#top_menu{
+	    background-color: rgba(229, 59, 87, .9);
+	}
+
+	.menu li{
+	    height: 55px;
+    	line-height: 55px;
+    	display: block;
+    	padding: 0 8px;
+   	 	border-bottom: 1px solid #888;
+	}
+
+	.menu li a{
+		text-decoration: none;
+		display: block;
+		margin: 0 -22px;
+	}
+
+	.menu li a:hover{
+		color: rgba(0,0,0,.6);
+		background-color: #fff;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	nav{
+		height: 56px;
+	}
+
+	.menu-btn{
+	height: 40px;
+    width: 40px;
+    /* background-color: red; */
+    border-radius: 10%;
+    border: 2px solid #fff;
+	}
+
+	#top_menu{
+	    background-color: rgba(229, 59, 87, .9);
+	}
+
+	.menu li{
+	    height: 55px;
+    	line-height: 55px;
+    	display: block;
+    	padding: 0 8px;
+   	 	border-bottom: 1px solid #888;
+	}
+
+	.menu li a{
+		text-decoration: none;
+		display: block;
+		margin: 0 -22px;
+	}
+
+	.menu li a:hover{
+		color: rgba(0,0,0,.6);
+		background-color: #fff;
+	}
+	
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	nav{
+		height: 56px;
+	}
+
+	.menu-btn{
+	height: 40px;
+    width: 40px;
+    /* background-color: red; */
+    border-radius: 10%;
+    border: 2px solid #fff;
+	}	
+
+	#top_menu{
+	    background-color: rgba(229, 59, 87, .9);
+	}
+
+	.menu li{
+	    height: 55px;
+    	line-height: 55px;
+    	display: block;
+    	padding: 0 8px;
+   	 	border-bottom: 1px solid #888;
+	}
+
+	.menu li a{
+		text-decoration: none;
+		display: block;
+		margin: 0 -22px;
+	}
+
+	.menu li a:hover{
+		color: rgba(0,0,0,.6);
+		background-color: #fff;
+	}
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

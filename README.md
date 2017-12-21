@@ -1,1 +1,0 @@
-# Ivasiuk.github.io

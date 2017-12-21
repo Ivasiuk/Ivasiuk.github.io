@@ -1,146 +1,394 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html ng-app="todoListApp">
 <head>
-    <title>Todos</title>
-    <script src="Libraries/angular.js"></script>
-    <link href="Libraries/bootstrap.css" rel="stylesheet" />
-    <link href="Libraries/bootstrap-theme.css" rel="stylesheet" />
 
-    <script>
-        // Модель
+	<meta charset="utf-8" />
 
-        var model = {
-            left: "",
-            todos: []
-        };
+	<title>Квітоманія</title>
 
-        // Модуль
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-        var todoListApp = angular.module("todoListApp", []);
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat:700|Lobster" rel="stylesheet">
 
-        // Контроллер
-
-        todoListApp.controller("TodoListCtrl", function ($scope) {
-
-            $scope.data = model;
-            function left (){
-               
-                for (var i = 0, n = 0; i < $scope.data.todos.length; i++){
-                    if (!$scope.data.todos[i].passed) {n++};
-                };
-		if (n == 0){return ''}
-		else if (n == 1){
-                    return '1 item left';
-                } else {
-                    return n + ' items left';
-                };
-            }
-
-            // Обработчик нажатия по кнопке
-            $scope.addNewTodo = function () {
-console.log($scope.todoName );
-		if($scope.todoName == undefined || "") {return}
-		else {
-                	$scope.data.todos.push({
-                 	   id: $scope.data.todos.length + 1,
-                  	  name: $scope.todoName,
-                  	  passed: false
-                	});
-		};
-
-                $scope.todoName = undefined ;
-                $scope.data.left = left();
-
-                
-            }
-
-            $scope.showText = function (passed) {
-		$scope.data.left = left();
-                return passed ? "Done" : "Not done";
-            }
-
-            $scope.setStyle = function (passed) {
-                return passed ? "color:green" : "color:red; font-weight: bold";
-            }
-
-           
-	    $scope.sortNumber = function(){
-		$scope.data.todos.sort(compareNum);
-		function compareNum (a, b){
-		    var r=0;
-  	   	    if (a.id > b.id) { r = 1; }
-         	    if (a.id < b.id) { r = -1; }
-  		    return r;
-		};
-	    };
-	    $scope.sortName = function(){
-		$scope.data.todos.sort(compareNum);
-		function compareNum (a, b){
-		    var r=0;
-  	   	    if (a.name > b.name) { r = 1; }
-         	    if (a.name < b.name) { r = -1; }
-  		    return r;
-	        };
-	    };
-	    $scope.sortProgress = function(){
-		$scope.data.todos.sort(compareNum);
-		function compareNum (a, b){
-		    var r=0;
-  	   	    if (a.passed > b.passed) { r = 1; }
-         	    if (a.passed < b.passed) { r = -1; }
-  		    return r;
-	        };
-	    };		
-        });
-
-    </script>
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
 
 </head>
 
-<body ng-controller="TodoListCtrl">
-    <div class="container">
-        <div class="page-header">
-            <h1>
-                TODOS
-            </h1>            
-        </div>
-        <div class="panel">
-            <div class="input-group">
-                <input placeholder="What needs to be done?" class="form-control" ng-model="todoName" />
-                <span class="input-group-btn">
-                    <button class="btn btn-default" ng-click="addNewTodo()">Add</button>
-                </span>
-            </div>
+<body>
 
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th class="btn-info" ng-click="sortNumber()">№</th>
-                        <th class="btn-info" ng-click="sortName()">Task</th>
-                        <th style="background-image: linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);"></th>
-                        <th class="btn-info" style="width: 103px;" ng-click="sortProgress()">Progress</th>                        
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="todo in data.todos">
-                        <td>{{todo.id}}</td>    
-                        <td>{{todo.name}}</td>
-                        <!-- CheckBox чрез директиву ng-model связан со свойством passed -->
-                        <td><input type="checkbox" ng-model="todo.passed" /></td>
-                        <td>
-                            <span style="{{setStyle(todo.passed)}}">
-                                {{showText(todo.passed)}}
-                            </span>
-                        </td>                         
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-	<div>
-            
-            <h4 style="color: darkgrey;"> {{data.left}}</h4>
-        </div>
-    </div>
+	
+	<header>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button type="button" class="menu-btn navbar-toggle" data-toggle="collapse" data-target="#top_menu">
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						</button>
+					</div>					
+					<div class="collapse navbar-collapse" id="top_menu">
+						<ul class="menu">
+							<li><a href="#rose_deshevo" class="scrollto">ТРОЯНДА КЕНІЯ</a></li>
+							<li><a href="#rose_deshevo" class="scrollto">ТРОЯНДА Еквадор</a></li>
+							<li><a href="#rose_deshevo" class="scrollto">ТРОЯНДА РЕД НАОМІ</a></li>
+							<li><a href="#rose_deshevo" class="scrollto">ТРОЯНДА АСКАНІЯ</a></li>
+							<li><a href="#rose_deshevo" class="scrollto">ТРОЯНДА ВАВ</a></li>
+							<li><a href="#rose_deshevo" class="scrollto">ТРОЯНДА АВАЛАНЧ</a></li>
+							<li><a href="#rose_deshevo" class="scrollto">ТРОЯНДА АКВА</a></li>
+							<li><a href="#rose_deshevo" class="scrollto">ТРОЯНДА ДЕЛЬ ТОРО</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="#">
+	            		<div class="logo">
+	                		<img src="img/logo.jpg" class="loading">
+	                		<h1 class="logo-name red">Квітоманія</h1>
+	               			<p class="logo-desc">Доставка квітів в
+	                   		<br>Тячеві</h1>
+	           			</div>
+	       			 </a>
+				</div>
+				<div class="col-sm-4">
+				<div class="delivery">
+            		<img src="img/clock.png" class="loading">
+           			 <p>Доставка 24 години 
+                		 <span>Прийом замовлень: 9:00-21:00</span>
+                	 </p>
+        		</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="contact">
+           				<p class="desc">Потрібен букет? Дзвони!</p>
+           				<p class="phone callibri_phone">
+           					<span class="red">+38 (067) 
+           					</span> 80-44-253
+           				</p>
+          				<p class="address">м. Тячів, вул. Незалежності 7</p>
+          		    </div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="descriptor">
+		<div class="container">
+			<div class="row descr">Троянди <span class="red descriptor-price">від 30 гивень </span> з доставкою по Тячеву та району за 1 годину!
+        		<p class="desc-sub">Засіб для продовження життя букету до 2-х тижнів <span class="red">в ПОДАРУНОК!</span>
+       			</p>
+   			</div>	
+		</div>
+	</section>
+
+	<section id="main-img">
+		<div class="container-fluid no-padding">
+			<div class="general-img">
+				<div class="action-text-bg">
+               		<div class="text1">Акція!</div>
+             		<div class="text2">Букет 35 троянд Кенія
+                    	<p>(Троянди Кенія 40 см, 5 кольорів троянд на ваш выбір!) </p>
+                    </div>
+                	<div class="text3">
+                    	<div class="old-price">1 050 грн.
+                    	</div>
+                    	<span class="new-price">899<span class="small"> грн.</span></span>
+                	</div>
+            	</div>
+			</div>	
+			<div class="row ">
+            	<button type="button" class="btn-order btn btn-danger btn-lg
+				">Замовити букет по акції!</button>				
+			</div>		
+		</div>
+	</section>
+
+	<section class="info">
+		<div class="list-bg">
+			<ul class="no-padding">
+                <li>
+                    <img src="img/crown.png" class="loading">
+                    <p>Величезні букети троянд по оптовим цінам!</p>
+                </li>
+                <li>
+                    <img src="img/snowflake.png" class="loading">
+                    <p>Щоденна поставка <br> квітів <br> 100% свіжість</p>
+                </li>
+                <li>
+                    <img src="img/agent.png" class="loading">
+                    <p>Послуга "Інкогніто"
+                        <br>Подаруємо букет за Вас</p>
+                </li>
+                <li>
+                    <img src="img/bag.png" class="loading">
+                    <p>Доставка квітів <br>по Тячеву за 1 годину <br> або швидше</p>
+                </li>
+                <li>
+                    <img src="img/cash.png" class="loading">
+                    <p>Оплата готівкою/безготівковий розрахунок</p>
+                </li>
+            </ul>
+		</div>
+	</section>
+
+	<section class="row1">
+		<div class="container">
+			<div class="row row_title_block">	
+				<div class="col-md-4 col-sm-3 line_bottom"></div>	
+				<div class="title_block col-sm-6 col-md-4"  >
+					<h2>ТРОЯНДА КЕНІЯ
+					<img src="img/29.png" class="loading">
+					</h2>
+				</div>
+				<div class="col-md-4 col-sm-3 line_bottom"></div>
+			</div>
+			<div class="cont">
+				<div class="row">
+					<button class="btn description_title" data-toggle="collapse" data-target="#demo">Опис</button>
+					<div class="description active collapse" id='demo'>
+						<p>Троянда Кенія - це розмаїття кольорів та ароматів. Купити троянди недорого дуже просто! В наявності 7 кольорів на вибір! Квітка має бутон середнього розміру та заввишки 37 см. Троянди Кенія - це можливість заощадити в ціні та придбати квіти дешево!&nbsp;</p>
+        			</div>  
+				</div>
+			</div>		
+        		      		
+			
+			<div class="row products ">
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
+						<div class="badges"><img src="img/action.png" class="loading"></div>
+    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
+						<div class="product-image">
+							<a href="#">
+								<img class="loaded img-resposive" src="img/rosa51.jpg">
+							</a>	
+						</div>
+    					<div class="product-old-price">1 225 грн.</div>
+   						<div class="product-price">999 грн.</div>
+    					<button class="btn btn-danger btn_order_sm">замовити</button>
+    					<form action="">        
+   						</form>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
+						<div class="badges"><img src="img/action.png" class="loading"></div>
+    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
+						<div class="product-image">
+							<a href="#">
+								<img class="loaded img-resposive" src="img/rosa51.jpg">
+							</a>	
+						</div>
+    					<div class="product-old-price">1 225 грн.</div>
+   						<div class="product-price">999 грн.</div>
+    					<button class="btn btn-danger btn_order_sm">замовити</button>
+    					<form action="">        
+   						</form>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						rerrrgererge
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						rerrrgererge
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						rerrrgererge
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						rerrrgererge
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="row1 row_last">
+		<div class="container">
+			<div class="row row_title_block">	
+				<div class="col-md-4 col-sm-3 line_bottom"></div>	
+				<div class="title_block col-sm-6 col-md-4"  >
+					<h2>МІКСИ
+					<img src="img/29.png" class="loading">
+					</h2>
+				</div>
+				<div class="col-md-4 col-sm-3 line_bottom"></div>
+			</div>
+			<div class="cont">
+				<div class="row">
+					<button class="btn description_title" data-toggle="collapse" data-target="#mix">Опис</button>
+					<div class="description active collapse" id='mix'>
+						<p>Троянда Кенія - це розмаїття кольорів та ароматів. Купити троянди недорого дуже просто! В наявності 7 кольорів на вибір! Квітка має бутон середнього розміру та заввишки 37 см. Троянди Кенія - це можливість заощадити в ціні та придбати квіти дешево!&nbsp;</p>
+        			</div>  
+				</div>
+			</div>		
+        		      		
+			
+			<div class="row products">
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
+						<div class="badges"><img src="img/action.png" class="loading"></div>
+    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
+						<div class="product-image">
+							<a href="#">
+								<img class="loaded img-resposive" src="img/rosa51.jpg">
+							</a>	
+						</div>
+    					<div class="product-old-price">1 225 грн.</div>
+   						<div class="product-price">999 грн.</div>
+    					<button class="btn btn-danger btn_order_sm">замовити</button>
+    					<form action="">        
+   						</form>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
+						<div class="badges"><img src="img/action.png" class="loading"></div>
+    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
+						<div class="product-image">
+							<a href="#">
+								<img class="loaded img-resposive" src="img/rosa51.jpg">
+							</a>	
+						</div>
+    					<div class="product-old-price">1 225 грн.</div>
+   						<div class="product-price">999 грн.</div>
+    					<button class="btn btn-danger btn_order_sm">замовити</button>
+    					<form action="">        
+   						</form>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						rerrrgererge
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						rerrrgererge
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						rerrrgererge
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products_block">
+						rerrrgererge
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ready-works">
+		<div class="container">
+			<div class="row row_title_block">	
+				<div class="col-md-4 col-sm-3 line_bottom"></div>	
+				<div class="title_block col-sm-6 col-md-4">
+					<h2>НАШІ РОБОТИ</h2>
+				</div>
+				<div class="col-md-4 col-sm-3 line_bottom"></div>				
+			</div>		
+			<div class="container">
+				<div class="row">
+					<div class="slides">
+						<div class="slideitem slideitem-1">
+							<a href="#">
+								<img src="img/ready-works/212.jpg" alt="Наші роботи">
+							</a>
+						</div>
+						<div class="slideitem slideitem-2">
+							<a href="#">
+								<img src="img/ready-works/370.jpg" alt="Наші роботи">
+							</a>
+						</div>
+						<div class="slideitem slideitem-3">
+							<a href="#">
+								<img src="img/ready-works/212.jpg" alt="Наші роботи">
+							</a>
+						</div>
+						<div class="slideitem slideitem-4">
+							<a href="#">
+								<img src="img/ready-works/372.jpg" alt="Наші роботи">
+							</a>
+						</div>
+						<div class="slideitem slideitem-5">
+							<a href="#">
+								<img src="img/ready-works/373.jpg" alt="Наші роботи">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+
+	<section class="find_us">
+		<div class="container">
+			<div class="row row_title_block">
+				<div class="col-md-4 col-sm-3 line_bottom"></div>		
+				<div class="title_block col-md-4 col-sm-6" >
+					<h2>ЯК НАС ЗНАЙТИ</h2>
+					<p class="proezd">м. Тячів, вул. Незалежності, 7<br><span style="font-size:80%;">- напроти готелю "Тячів"<br>- поруч з відділенням ОТР-банку</span>
+       				</p>
+				</div>	
+				<div class="col-md-4 col-sm-3 line_bottom"></div>		
+			</div>				
+				<div class="row search_map">
+					<div class="col-sm-6 left-side ">						
+					</div>
+					<div class="col-sm-6 right-side">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2669.1443966309243!2d23.5729157!3d48.0109201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47379051a838b36f%3A0x5509f426a73540a8!2sKvitomaniya!5e0!3m2!1sru!2sua!4v1513715643117" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="logo_wrap">
+							<a href="#">
+		            			<div class="logo">
+		                			<img src="img/logo.jpg" class="loading">
+		                			<h3 class="logo-name red">Квітоманія</h3>
+		               				<p class="logo-desc">Доставка квітів в
+		                   			<br>Тячеві</p>
+		           				</div>
+		       			 	</a>
+		       			</div> 	
+	       			</div>	
+				</div>
+				<div class="col-md-4 col-sm-6"></div>
+				<div class="col-md-4 col-sm-6"></div>
+			</div>
+		</div>		
+	</section>
+
+
+		
+
+	<script src="libs/jquery/jquery-2.1.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="js/common.js"></script>
+	
 </body>
 </html>
+
