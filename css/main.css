@@ -8,6 +8,15 @@ body{
 	color: #ff4461;
 }
 
+strong {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.mb-60{
+	margin-bottom: 60px;
+}
+
 p{
 	margin: 0;
 }
@@ -133,30 +142,29 @@ header .delivery p span {
     font-size: 16px;
 }
 
-header .contact {
+.contact {
 	font-family: 'Open Sans Condensed', sans-serif;
-    width: 260px;
     position: relative;
     font-weight: 600;
 }
 
-header .contact p{
+.contact p{
 	margin: 0 0 -5px 0px;
 }
 
-header .contact .phone{
+.contact .phone{
 	font-size: 30px;
 }
 
-header .contact .phone span{
+.contact .phone span{
 	font-size: 22px;
 }
 
-header .contact .desc{
+.contact .desc{
 	font-size: 26px;
 }
 
-header .contact .address{
+.contact .address{
 	font-size: 17px;
 	color: #999;
 }
@@ -644,6 +652,37 @@ section.find_us .logo{
 	width: 290px;
 	margin: 0 auto;
 }
+
+section.find_us .soc_network a{
+	display: inline-block;
+    vertical-align: inherit;
+    margin: 32px 0 0 3px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../img/sprite-contact.png) 0 0 transparent no-repeat;
+}
+
+section.find_us .soc_network a.soc-facebook{
+	background-position: 0 0;
+}
+
+section.find_us .soc_network a.soc-instagram{
+	background-position: -1116px 0;
+}
+
+section.find_us .soc_network a.pluso-email{
+	background-position: -682px 0;
+}
+
+section.find_us .footer-copy{
+	margin: 60px 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+}
+
+
+
 
 
 
