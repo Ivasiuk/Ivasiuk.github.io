@@ -597,6 +597,7 @@ section.ready-works .slideitem-1 img{
     filter: blur(3px);
     width: 256px;
     height: 192px;
+    border-radius: 10px;
 }
 
 section.ready-works .slideitem-4 img,
@@ -604,12 +605,14 @@ section.ready-works .slideitem-2 img{
     filter: blur(2px);
 	width: 320px;
     height: 240px;
+    border-radius: 10px;
 }
 
 section.ready-works .slideitem-3 img{
 	filter: blur(0px);
 	width: 400px;
     height: 300px;
+    border-radius: 10px;
 }
 
 
