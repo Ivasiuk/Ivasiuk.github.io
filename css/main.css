@@ -17,6 +17,10 @@ strong {
 	margin-bottom: 60px;
 }
 
+h2{
+    text-transform: uppercase;
+}
+
 p{
 	margin: 0;
 }
@@ -381,7 +385,7 @@ section.row1{
 .row1 .title_block .loading{
     position: absolute;
     top: -60px;
-    right: -40px;
+    right: -65px;
     z-index: 999;
 }
 
