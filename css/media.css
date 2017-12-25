@@ -3,20 +3,77 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+	nav{
+		line-height: 31px;
+	}
+
 	.row1 .title_block .loading{
     right: -20px;
-}
+	}
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+	section.ready-works .slides{
+		width: inherit;
+	}
+
+	section.ready-works .slideitem.slideitem-3{
+		margin: 0 auto;
+		position: relative;
+		right: 0;
+	}
+
+	section.ready-works .slides .prevButton{
+		left: 7%;
+	}
+
+	section.ready-works .slides .nextButton{
+		right: 7%;
+	}
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
 	/*Disable Animation on Mobile Devices*/
+
+	.row .line_bottom{
+		height: 13px;
+	}
+
+	section.rose_ekvador{
+		margin-top: -108px;
+	}
+
+	section.rose_ekvador .row_title_block{
+		margin-top: 90px;
+	}
+
+	.line_bottom{
+		dn
+	}
+
+	.btn-order{
+	margin-top: -195px;
+	font-size: 32px;
+    padding: 34px 64px;
+    height: 6px;
+    line-height: 0;
+	}
+
+	.menu li a.active{
+    color: #000;
+}
+	
+	.general-img{
+		height: 320px;
+		background: url(../img/main-img-mini.png) no-repeat center top;
+	}
+
 	.animated {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
@@ -37,6 +94,7 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}	
+
 	nav{
 		height: 56px;
 	}
@@ -75,6 +133,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
 	nav{
 		height: 56px;
 	}

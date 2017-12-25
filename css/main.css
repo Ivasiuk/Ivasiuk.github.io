@@ -9,12 +9,15 @@ body{
 }
 
 strong {
-    font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
 }
 
 .mb-60{
 	margin-bottom: 60px;
+}
+
+.w-750{
+    width: 750px;
 }
 
 h2{
@@ -58,18 +61,18 @@ header{
 }
 
 nav{
-	height: 40px;
-	line-height: 40px;
-	top: 0;
-	background-color: #000;
-	position: fixed;
-	text-transform: uppercase;
-	font-size: 16px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	width: 100%;
-	z-index: 1000;
-	color: rgb(102, 102, 102);
-
+    height: 70px;
+    padding-top: 3px;
+    line-height: 67px;
+    top: 0;
+    background-color: #000;
+    position: fixed;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 100%;
+    z-index: 10000;
+    color: rgb(102, 102, 102);
 }
 
 .menu{
@@ -85,6 +88,11 @@ nav{
 	text-decoration: underline;
 	color: #fff;
 	text-transform: uppercase;
+}
+.menu li a.active{
+    text-decoration: underline;
+    color: #ff4461;
+    text-transform: uppercase;
 }
 .menu li a:hover{
 	text-decoration: none;
@@ -500,7 +508,6 @@ section.ready-works .row_title_block{
 }
 
 section.ready-works .slides{
-	width: 750px;
     position: relative;
     margin: 0 auto;
     height: 420px;
@@ -540,7 +547,7 @@ section.ready-works .slides img{
     position: absolute;
     left: 0;
     opacity: 0;
-    transition: opacity .3s;
+    
 }
 
 section.ready-works .slides img.showed{
@@ -605,6 +612,7 @@ section.ready-works .slideitem-1 img{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: opacity 1.2s;
 
 }
 
@@ -617,6 +625,7 @@ section.ready-works .slideitem-2 img{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: opacity .8s;
 }
 
 section.ready-works .slideitem-3 img{
@@ -627,6 +636,7 @@ section.ready-works .slideitem-3 img{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: opacity .4s;
 }
 
 
@@ -644,13 +654,13 @@ section.find_us .title_block h2{
 	color: #444;
 }
 
-section.find_us .title_block p{
+section.find_us .row_title_block p{
 	color: #5f5252;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
-    margin-top: 45px;
+    margin-top: 70px;
     margin-bottom: 45px;
 }
 
@@ -662,6 +672,7 @@ section.find_us .left-side, section.find_us .right-side{
 section.find_us .left-side{	
 	background: url(../img/main.jpg) no-repeat center center;
 	background-size: contain;
+    margin-bottom: 60px;
 }
 
 section.find_us .right-side iframe{
@@ -741,6 +752,13 @@ footer .footer-copy a{
 footer .footer-copy a:hover{
 	text-decoration: none;
 }
+
+footer .footer_bg{
+    height: 57px;
+    background-color: #f6525d;
+    margin-top: 32px;
+}
+
 
 
 

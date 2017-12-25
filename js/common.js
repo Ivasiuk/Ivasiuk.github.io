@@ -71,5 +71,24 @@ $(document).ready(function() {
         this.images_5[five].classList.add('showed');
     }
 }
+
+   $('.menu li a').on('click', function (e) {
+        e.preventDefault();
+        
+        $('.menu li a').removeClass('active').filter(this).addClass('active');
+        
+        var selector = $(this).attr('href'); /* #about - строка */
+        var h = $(selector); /* jquery-элемент заголовка */
+        
+        $('html, body').animate({
+            scrollTop: h.offset().top - 130
+        }, {
+   			duration: 1000, 
+    		specialEasing: {
+      		opacity: 'linear',
+      		height: 'swing'
+    		}
+    	});       
+    });
 	
 });
