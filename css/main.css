@@ -337,7 +337,8 @@ header .delivery p span {
 	height: auto;
 	margin: auto;
 	z-index: 99;
-	padding-bottom: 90px;
+	padding-bottom: 160px;
+    padding-top: 60px;
 }
 
 .info .list-bg{
@@ -719,6 +720,10 @@ section.find_us a:hover{
 section.find_us .logo{
 	width: 290px;
 	margin: 0 auto;
+}
+
+section.find_us .soc_network{
+    margin-bottom: 16px;
 }
 
 section.find_us .soc_network a{
