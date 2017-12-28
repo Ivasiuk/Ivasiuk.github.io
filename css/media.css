@@ -31,11 +31,11 @@
 	}
 
 	section.ready-works .slides .prevButton{
-		left: 7%;
+		left: 0%;
 	}
 
 	section.ready-works .slides .nextButton{
-		right: 7%;
+		right: 0%;
 	}
 
 }
@@ -204,6 +204,11 @@
 	section.ready-works .slideitem-3 img{
 		width: 100%;
 		height: auto;
+	}
+
+	section.ready-works .slides .prevButton,
+	section.ready-works .slides .nextButton{
+		top: 107px
 	}
 
 }
