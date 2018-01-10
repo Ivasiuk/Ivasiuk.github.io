@@ -256,14 +256,14 @@ $(document).ready(function() {
 
 		/* Send message to your e-mail */	
 
-	$('.btn_order_sm').on('click', function(){
+	$('.btn_order_sm').submit( function(){
 		console.log('HOhoho');
 		$.ajax({
 			type: "POST",
-			url: "./mail.php",
+			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function(){
-			alert("Дякуємо за заявку, ми скоро з Вами зв'яжемось");
+			console.log("Дякуємо за заявку, ми скоро з Вами зв'яжемось");
 		});
 		return false;
 	});	
