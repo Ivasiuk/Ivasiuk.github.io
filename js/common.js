@@ -260,7 +260,7 @@ $(document).ready(function() {
 		console.log('HOhoho');
 		$.ajax({
 			type: "POST",
-			url: "../main.php",
+			url: "./mail.php",
 			data: $(this).serialize()
 		}).done(function(){
 			alert("Дякуємо за заявку, ми скоро з Вами зв'яжемось");
