@@ -256,7 +256,7 @@ $(document).ready(function() {
 
 		/* Send message to your e-mail */	
 
-	$('#form').submit(function(){
+	$('.btn_order_sm').on('click', function(){
 		console.log('HOhoho');
 		$.ajax({
 			type: "POST",
