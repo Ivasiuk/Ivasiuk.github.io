@@ -20,8 +20,7 @@
 </head>
 
 <body>
-
-	
+	<button class="btn_top">догори</button>
 	<header>
 		<nav>
 			<div class="container">
@@ -32,16 +31,9 @@
 						</button>
 					</div>					
 					<div class="collapse navbar-collapse" id="top_menu">
-						<ul class="menu">
-							<li><a data-toggle="collapse" data-target="#top_menu"href="#rose_ekvador" class="scrollto">ТРОЯНДА Еквадор</a></li>
-							<li><a data-toggle="collapse" data-target="#top_menu" href="#rose_holland" class="scrollto">ТРОЯНДА Голандія</a></li>
-							<li><a data-toggle="collapse" data-target="#top_menu" href="#rose_ukraine" class="scrollto">ТРОЯНДА Українська</a></li>
-							<li><a data-toggle="collapse" data-target="#top_menu" href="#bouquet" class="scrollto">Букети</a></li>
-							<li><a data-toggle="collapse" data-target="#top_menu" href="#heart" class="scrollto">Серце з троянд</a></li>
-							<li><a data-toggle="collapse" data-target="#top_menu" href="#flower_box" class="scrollto">квіти  в коробці</a></li>
-							<li><a data-toggle="collapse" data-target="#top_menu" href="#flower_basket" class="scrollto">Корзини з квітами</a></li>
-							<li><a data-toggle="collapse" data-target="#top_menu" href="#rose_giant" class="scrollto">Троянди-гіганти</a></li>
-							<li><a data-toggle="collapse" data-target="#top_menu" href="#delivery" class="scrollto">Доставка квітів</a></li>
+						<ul class="menu visible-xs" data-toggle="collapse" data-target="#top_menu">
+						</ul>
+						<ul class="menu hidden-xs">
 						</ul>
 					</div>
 				</div>
@@ -62,7 +54,7 @@
 				</div>
 				<div class="col-sm-6 hidden-xs">
 					<div class="contact">
-           				<p class="desc">Потрібен букет? Дзвони!</p>
+           				<p class="desc">Потрібен букет? Дзвоніть!</p>
            				<p class="phone callibri_phone">
            					<span class="red">+38 (067) 
            					</span> 80-44-253
@@ -99,9 +91,26 @@
             	</div>
 			</div>	
 			<div class="row ">
-            	<button type="button" class="btn-order btn btn-danger btn-lg
-				">Замовити букет!</button>				
+            	<button type="button" class="btn-order btn btn-danger btn-lg" data-toggle="modal" data-target="#DlModal" aria-hidden="true">Замовити букет!</button>				
 			</div>		
+		</div>
+		<div class="modal fade" id="DlModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Залиште своє ім'я та телефон і наш менеджер зв'яжеться з Вами, відповість на будь-які питання або допоможе підібрати для Вас букет!
+</h4>
+					</div>
+					<div class="modal-body">
+						<form id="form">
+							<input type="text" class="form-control destX" name="name" placeholder="Ваше ім'я" required>
+							<input type="text" class="form-control destY" name="phone" placeholder="Телефон" required>
+							<input type="submit" value="Надіслати" data-dismiss="modal" class="my_btn btn_md btn-block btn_order_sm">
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -133,12 +142,12 @@
 		</div>
 	</section>
 
-	<section class="row1 rose_ekvador">
+	<section class="row1 hidden">
 		<div class="container mw-960">
 			<div class="row row_title_block">	
 				<div class="col-md-3 col-sm-3 col-lg-4 hidden-xs line_bottom"></div>	
 				<div class="title_block col-sm-6 col-lg-4 col-md-6"  >
-					<h2 id='rose_ekvador'>ТРОЯНДА ЕКВАДОР
+					<h2>
 					<img src="img/29.png" class="loading">
 					</h2>
 				</div>
@@ -146,634 +155,35 @@
 			</div>
 			<div class="cont">
 				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" data-target="#demo_rose_ekvador">Опис</button>
-					<div class="description  collapse" id='demo_rose_ekvador'>
-						<p>Троянди не залишать байдужою жодну жінку. Зі смаком оформлений букет еквадорських троянд стане універсальним варіантом презенту для круглої дати, першого побачення або Дня народження.</br>Еквадорська троянда користується попитом серед любителів красивих букетів, вона стрімко завойовує позиції на українському ринку квітів.Основна відмінність такого сорту квітів - великі бутони. Завдяки цьому, букети візуально виглядають ще більш пишними і об'ємними. </br>Хороші сорти еквадорських троянд довгий час не в'януть і зберігають свіжий зовнішній вигляд. Вибирайте ці привабливі бутони, якщо хочете максимально продовжити термін життя свого букету. Такі троянди зазвичай відрізняються більш вигідною ціною, ніж аналоги інших сортів. Чи не переплачуючи зайвих грошей, ви отримуєте гарний букет, який довго буде радувати око.</p>
+					<button class="btn description_title" data-toggle="collapse" >Опис</button>
+					<div class="description  collapse">
+						<p></p>
         			</div>  
 				</div>
 			</div>		
         		      		
 			
-			<div class="row products ">
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
+			<div class="row prod">
+				<div class="hidden products_block col-md-4 col-sm-6">					
+					<div class="product_name">БУКEТ 35 ТРОЯНД</div>
+					<div class="badges"><img src="img/action.png" class="loading"></div>
+					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
+					<div class="product-image">
+						
+							<img class="loaded img-resposive" src="img/sections/rose_ekvador/25_roz/main_photo.jpg">
+						
 					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
+					<div class="product-old-price">1 225 грн.</div>
+						<div class="product-price">999 грн.</div>
+					<button class="btn btn-danger btn_order_sm">замовити</button>
+					<form action="">        
+						</form>					
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="row1 rose_holland">
-		<div class="container mw-960">
-			<div class="row row_title_block">	
-				<div class="col-md-3 hidden-xs col-sm-3 col-lg-4 line_bottom"></div>	
-				<div class="title_block col-sm-6 col-lg-4 col-md-6"  >
-					<h2 id='rose_holland'>ТРОЯНДА Голандія
-					<img src="img/29.png" class="loading">
-					</h2>
-				</div>
-				<div class="col-md-3 col-sm-3 col-lg-4 line_bottom"></div>
-			</div>
-			<div class="cont">
-				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" data-target="#demo_rose_holland">Опис</button>
-					<div class="description  collapse" id='demo_rose_holland'>
-						<p>Голландські троянди мають безліч переваг, за які їх цінують і флористи, і просто любителі красивих троянд. Букет таких квітів магазин "Квітоманія" пропонує купити за цілком привабливою ціною, а платити дійсно є за що. </br> Головне достоїнство таких імпортних квітів - їх стійкість до стресів. Вони прекрасно переносять і зберігання, та перевезення. Після зрізання троянди будуть стояти в букеті більше одного тижня, при правильному догляді квіти будуть радувати своєю красою і свіжістю до двох тижнів. </br>Купити голландську троянду в Тячеві можна навіть в зимовий та осінній сезони, а це прекрасна можливість радувати прекрасних жінок незалежно від дати на календарі.
-</p>
-        			</div>  
-				</div>
-			</div>		
-        		      		
-			
-			<div class="row products ">
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="row1 rose_ukraine">
-		<div class="container mw-960">
-			<div class="row row_title_block">	
-				<div class="col-md-3 col-sm-3 col-lg-4 hidden-xs line_bottom"></div>	
-				<div class="title_block col-sm-6 col-lg-4 col-md-6"  >
-					<h2 id='rose_ukraine'>ТРОЯНДА Українська
-					<img src="img/29.png" class="loading">
-					</h2>
-				</div>
-				<div class="col-md-3 col-sm-3 col-lg-4 line_bottom"></div>
-			</div>
-			<div class="cont">
-				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" data-target="#demo_rose_ukraine">Опис</button>
-					<div class="description  collapse" id='demo_rose_ukraine'>
-						<p>Якщо вам необхідно привітати дорогу людину зі святом, а зробити це особисто не представляється можливим, то ви можете просто замовити скромний, але дуже милий букет з доставкою за вказаною адресою і в потрібний час. </br>Можемо запропонувати вам троянди вітчизняного виробництва, оскільки вони доступні майже цілий рік і мають відмінну конкурентну ціну.</p>
-        			</div>  
-				</div>
-			</div>		
-        		      		
-			
-			<div class="row products ">
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="row1 bouquet">
-		<div class="container mw-960">
-			<div class="row row_title_block">	
-				<div class="col-md-4 col-sm-3 col-lg-5 hidden-xs line_bottom"></div>	
-				<div class="title_block col-sm-6 col-lg-2 col-md-4"  >
-					<h2 id='bouquet'>БУКЕТИ
-					<img src="img/29.png" class="loading">
-					</h2>
-				</div>
-				<div class="col-md-4 col-sm-3 col-lg-5 line_bottom"></div>
-			</div>
-			<div class="cont">
-				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" data-target="#demo_bouquet">Опис</button>
-					<div class="description  collapse" id='demo_bouquet'>
-						<p>Всі букети, представлені в каталозі нашої компанії, відрізняються стильним зовнішнім виглядом і просто фантастично красиві. </br>Велику цікавість представляють авторські роботи, складені з різних квітів і флористичної зелені. Ці композиції дуже подобаються нашим клієнтам - вони оригінальні і представляють своєрідне відображення внутрішнього світу автора. При бажанні купити квіти недорого, розраховуючи при цьому на неповторність подарунка.</p>
-        			</div>  
-				</div>
-			</div>	        		      		
-			
-			<div class="row products ">
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="row1 heart">
-		<div class="container mw-960">
-			<div class="row row_title_block">	
-				<div class="col-md-3 col-sm-3 col-lg-4 hidden-xs line_bottom"></div>	
-				<div class="title_block col-sm-6 col-lg-4 col-md-6"  >
-					<h2 id='heart'>СЕРЦЕ З ТРОЯНД
-					<img src="img/29.png" class="loading">
-					</h2>
-				</div>
-				<div class="col-md-3 col-sm-3 col-lg-4 line_bottom"></div>
-			</div>
-			<div class="cont">
-				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" data-target="#demo_heart">Опис</button>
-					<div class="description  collapse" id='demo_heart'>
-						<p>Букети з троянд у вигляді серця - оригінальний подарунок коханій людині! Це не просто купити квіти, а передати цілу бурю емоцій! </br>Кожна композиція квітів - це шедевр наших флористів. Магазин квітів "Квітоманія" - Ваш особистий помічник в складанні будь-якої складності композицій! </p>
-        			</div>  
-				</div>
-			</div>		
-        		      		
-			
-			<div class="row products ">
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="row1 flower_box">
-		<div class="container mw-960">
-			<div class="row row_title_block">	
-				<div class="col-md-3 col-sm-3 col-lg-4 hidden-xs line_bottom"></div>	
-				<div class="title_block col-sm-6 col-lg-4 col-md-6"  >
-					<h2 id='flower_box'>КВІТИ В КОРОБЦІ
-					<img src="img/29.png" class="loading">
-					</h2>
-				</div>
-				<div class="col-md-3 col-sm-3 col-lg-4 line_bottom"></div>
-			</div>
-			<div class="cont">
-				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" data-target="#demo_flower_box">Опис</button>
-					<div class="description  collapse" id='demo_flower_box'>
-						<p>Квіти в коробках - це новий, найоригінальніший і красивий варіант подарунка для рідних і близьких людей. Тенденція дарувати букети в коробках прийшла в нашу країну зовсім недавно і родом вона з Європи. На даний момент такий подарунок вважається найромантичнішим для коханих дівчат і дружин. </br>Існують різні варіанти складання композицій в капелюшних коробках. Наш магазин пропонує величезний вибір коробок різних розмірів і колірної гами, які можна наповнити великим асортиментом свіжозрізаних квітів. </br>Наші професійні флористи допоможуть підібрати коробку з огляду на всі Ваші побажання, а також оформлять Ваш букет максимально незвично і оригінально.</p>
-        			</div>  
-				</div>
-			</div>		
-        		      		
-			
-			<div class="row products ">
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="row1 flower_basket">
-		<div class="container mw-960">
-			<div class="row row_title_block">	
-				<div class="col-md-3 col-sm-3 col-lg-4 hidden-xs line_bottom"></div>	
-				<div class="title_block col-sm-6 col-lg-4 col-md-6"  >
-					<h2 id='flower_basket'>КОРЗИНИ КВІТІВ
-					<img src="img/29.png" class="loading">
-					</h2>
-				</div>
-				<div class="col-md-3 col-sm-3 col-lg-4 line_bottom"></div>
-			</div>
-			<div class="cont">
-				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" data-target="#demo_flower_basket">Опис</button>
-					<div class="description  collapse" id='demo_flower_basket'>
-						<p>Якщо квіти поштучно або букети Вам не підходять по якихось причин, то можливо рішення купити кошик квітів в "Квітоманії" це саме той варіант, який Ви шукали. </br>Квіткова корзина це вже більш солідне рішення. Як в плані практичності, так і в плані мальовничості. Кошик з квітами зручніше нести і ефектніше вручати. Тільки уявіть як ви даруєте шикарну корзину квітів. Її можна поставити в будь-якому місці, а це значить що Ваш подарунок буде стояти у всіх на виду і виділятися серед всіх інших подарованих квітів. Для неї не потрібно вази, що теж дуже зручно. Сам кошик, в якому будуть знаходитися квіти теж грає роль відмінного декору.</br>Ви можете навіть сказати на яку суму хочете замовити кошик з квітами і ми підберемо для Вас кілька чудових рішень. Якщо Ви хочете купити таку квіткову корзину, якої немає в нашому асортименті то просто повідомте нам всі її деталі. У Вас є її фото? Відмінно! Скиньте нам на пошту або на Viber і ми зробимо все в точності як Ви хочете.
-						</p>
-        			</div>  
-				</div>
-			</div>		
-        		      		
-			
-			<div class="row products ">
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="row1 row_last rose_giant">
-		<div class="container mw-960">
-			<div class="row row_title_block">	
-				<div class="col-md-3 col-sm-3 col-lg-4 hidden-xs  line_bottom"></div>	
-				<div class="title_block col-sm-6 col-lg-4 col-md-6"  >
-					<h2 id='rose_giant'>Троянди гіганти
-					<img src="img/29.png" class="loading">
-					</h2>
-				</div>
-				<div class="col-md-3 col-sm-3 col-lg-4 line_bottom"></div>
-			</div>
-			<div class="cont">
-				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" data-target="#demo_rose_giant">Опис</button>
-					<div class="description  collapse" id='demo_rose_giant'>
-						<p data-toggle="collapse" data-target="#demo_rose_giant">Великі троянди в Тячеві від магазину "Квітоманія" - це ексклюзивні позиції в квітковому світі, які так люблять жінки. Купити великі, метрові троянди &nbsp; і навіть вище (<strong>метрові -</strong> <strong>100 см, півтораметрові - 150 см, а також троянди 160 см</strong>) вы зможете в нашому магазині. Великі, довгі, високі, величезні троянди &nbsp; - як тільки не називають метрові і &nbsp;<span class="word w46">півтораметрові</span>&nbsp;<span class="word w47">троянди</span>.&nbsp; У будь-якому випадку, великі, величезні троянди - це елітний варіант подарунку до якого жодна дівчина не проявить байдужість. Більш того таким подарунком з великих троянд ви підкреслите свій статус.</p>
-        			</div>  
-				</div>
-			</div>		
-        		      		
-			
-			<div class="row products ">
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-						<div class="badges"><img src="img/action.png" class="loading"></div>
-    					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-						<div class="product-image">
-							<a href="#">
-								<img class="loaded img-resposive" src="img/rosa51.jpg">
-							</a>	
-						</div>
-    					<div class="product-old-price">1 225 грн.</div>
-   						<div class="product-price">999 грн.</div>
-    					<button class="btn btn-danger btn_order_sm">замовити</button>
-    					<form action="">        
-   						</form>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="products_block">
-						rerrrgererge
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
+	
 
 
 	<section class="ready-works">
@@ -978,7 +388,7 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<div class="contact">
-           				<p class="desc">Потрібен букет? Дзвони!</p>
+           				<p class="desc">Потрібен букет? Дзвоніть!</p>
            				<p class="phone callibri_phone">
            					<span class="red">+38 (067) 
            					</span> 80-44-253
@@ -996,7 +406,7 @@
                 <div class="description collapse" id="decription_footer">
                     <p>Флористичний магазин <strong>«Квітоманія» </strong>збере для вас <strong>букет</strong> і протягом години доставить його в ваші руки. На нашому зручному сайті просто виберіть і зробіть  <strong>замовлення квітів</strong>. Ви отримаєте ваші <strong>квіти</strong> за годину до міроприємства! Фотографії на сайті повністю відображають те, що ви будете замовляти. Ми фотографуємо <strong>живі квіти</strong> і не використовуємо фотографії з Інтернету! Мы зробимо <strong>доставку квітів</strong>, точно таких же, які ви оберете на нашому сайті. Наша команда завжди готова допомогти вам з <strong>доставкою квітів</strong>! Досить лише сказати нам, що ви хочете придбати і як нам до вас дістатися! <strong>Купити квіти дуже просто</strong>!  Єдина умова - замовлення у вихідні чи неробочі дні оформляйте заздалегідь. У нас ви можете замовити прямо зараз <strong>букети квітів</strong> з <strong>червоних, білих, жовтих и помаранчевих троянд</strong>. Є в наявності <strong>білі, червоні, помаранчеві та малинові тюльпани</strong>. Купуйте у нас чудові <strong>композиції з живих квітів</strong>, які наповнять ваше життя яскравими враженнями та нікого не зможуть залишити байдужими.
                         <strong>Подарункові кошики</strong> дозволять надовго запам'ятати вашу оригінальність!
-                        <strong>Квіти в кошику</strong>, у <strong>вигляді  серця або весільні букети</strong>! Ми виконаємо будь-які ваші побажання! Ви легко і швидко зможете порадувати кохану людину або урізноманітнити ділову зустріч, а також прикрасити будь-яке <strong>святкове міроприємство</strong>. У продажу є <strong>букети з лілій та альстромерій</strong>. Вы можете придбати <strong>кущові троянди</strong>! Не треба багато платити за радість і щасливі моменти! Наша перевага полягає в тому, що ми віддаємо прекрасні композиції та <strong>квіти дешево. </strong>! В кожний <strong>букет</strong> наш  <strong>флорист</strong> обов'язково покладе спеціальний засіб, щоб ваші <strong>квіти</strong> радували вас і інших людей як можна більше часу! Ваші <strong>троянди и тюльпани и лілії</strong> простоять на 5-7 днів довше. Новинки в нашому каталозі здивують вас і додадуть ексклюзиву. У нових надходженнях <strong>сині та кольорові троянди</strong> з Голландії та Еквадору додадуть дивовижний сенс і подарують незабутні відчуття вам і вашій коханій людині! Всього за <strong>400 гривень</strong> вы можете купити <strong>букет из троянд</strong>. Ціла <strong>корзина квітів</strong> від 550 гривень. Або розкішний <strong>букет з троянд в формі серця</strong> від 850 гривень! Магазин <strong>«Квітоманія»</strong> завжди рада прийти вам на допомогу, як би терміново це не було потрібно в будь-який час доби! Ми порадуємо вас нашим сервісом, а ви порадуєте інших винахідливістю і оперативністю!</p>
+                        <strong>Квіти в кошику</strong>, у <strong>вигляді  серця або весільні букети</strong>! Ми виконаємо будь-які ваші побажання! Ви легко і швидко зможете порадувати кохану людину або урізноманітнити ділову зустріч, а також прикрасити будь-яке <strong>святкове міроприємство</strong>. У продажу є <strong>букети з лілій та альстромерій</strong>. Вы можете придбати <strong>кущові троянди</strong>! Не треба багато платити за радість і щасливі моменти! Наша перевага полягає в тому, що ми віддаємо прекрасні композиції та <strong>квіти дешево. </strong>! В кожний <strong>букет</strong> наш  <strong>флорист</strong> обов'язково покладе спеціальний засіб, щоб ваші <strong>квіти</strong> радували вас і інших людей як можна більше часу! Ваші <strong>троянди и тюльпани и лілії</strong> простоять на 5-7 днів довше. Новинки в нашому каталозі здивують вас і додадуть ексклюзиву. У нових надходженнях <strong>сині та кольорові троянди</strong> з Голландії та Еквадору додадуть дивовижний сенс і подарують незабутні відчуття вам і вашій коханій людині! Всього за <strong>400 гривень</strong> вы можете купити <strong>букет из троянд</strong>. Ціла <strong>корзина квітів</strong> від 550 гривень. Або розкішний <strong>букет з троянд в формі серця</strong> від 850 гривень! Магазин <strong>«Квітоманія»</strong> завжди радий прийти вам на допомогу! Ми порадуємо вас нашим сервісом, а ви порадуєте інших винахідливістю і оперативністю!</p>
                 </div>
 			</div>			
 		</div>				
@@ -1005,8 +415,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="row footer-copy">
-			        “Квітоманія” 2013 © ПП Івасюк Наталія Василівна
-			        <br><a href="mailto:kvitomaniya@gmail.com">kvitomaniya@gmail.com</a>
+			        “Квітоманія” 2017 © <br><a href="mailto:kvitomaniya@gmail.com">kvitomaniya@gmail.com</a>
 			        <br><span class="callibri_phone1">(067) 80-44-253</span>
 			    </div>
 			</div>

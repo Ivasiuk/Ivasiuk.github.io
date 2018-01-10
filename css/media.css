@@ -79,7 +79,7 @@
 	}
 
 	.menu li a.active{
-    	color: #000;
+    	color: #444;
 	}
 
 
@@ -156,6 +156,7 @@
 
 	.btn_order_sm{
 		font-size: 22px;
+		left: 43px;
 	}
 }
 
