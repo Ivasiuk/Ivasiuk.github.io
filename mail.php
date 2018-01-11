@@ -15,7 +15,7 @@ $mail->Host = 'smtp.gmail.com';  																							// Specify main and back
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'atag811@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'ivasyuk007'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'TLS';                            // Enable TLS encryption, `ssl` also accepted
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('atag811@gmail.com'); // от кого будет уходить письмо?
@@ -29,7 +29,7 @@ $mail->addAddress('kvitomaniya@gmail.com');     // Кому будет уход�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone;
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
