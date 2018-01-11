@@ -1,436 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
 
-<head>
+    <title>Отправка формы на почту </title>
 
-	<meta charset="utf-8" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
-	<title>Квітоманія</title>
+    <!-- Custom styles for this template -->
+    <style>
+    	form {
+    		background-color: #f9f9f9;
+    		padding: 20px;
+    		margin: 20px;
+    	}
+    </style>
+  </head>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <body>
+    <div class="container">
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Caveat:700|Lobster" rel="stylesheet">
+      <div class="row">
+      	<div class="col-sm-4">
+      		<form action="mail.php" method="POST">
+      			<legend>Заголовок формы</legend>
 
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/media.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
+      			<div class="form-group">
+      				<label for="">Введите ваше имя</label>
+      				<input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+      			</div>
+      		
+      			<div class="form-group">
+      				<label for="">Введите номер телефона</label>
+      				<input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+      			</div>
+      		
+      			<div class="form-group">
+      				<label for="">Введите email</label>
+      				<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+      			</div>
+      		
+      			<button type="submit" class="btn btn-primary">Отправить форму</button>
+      		</form>
+      	</div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
 
-</head>
-
-<body>
-	<button class="btn_top">догори</button>
-	<header>
-		<nav>
-			<div class="container">
-				<div class="row">
-					<div class="navbar-header">
-						<button type="button" class="menu-btn navbar-toggle" data-toggle="collapse" data-target="#top_menu">
-						<span class="glyphicon glyphicon-align-justify"></span>
-						</button>
-					</div>					
-					<div class="collapse navbar-collapse" id="top_menu">
-						<ul class="menu visible-xs" data-toggle="collapse" data-target="#top_menu">
-						</ul>
-						<ul class="menu hidden-xs">
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<a href="#">
-	            		<div class="logo">
-	                		<img src="img/logo.jpg" class=" hidden-xs loading">
-	                		<h1 class="logo-name red">Квітоманія</h1>
-	               			<p class="logo-desc hidden-xs">Доставка квітів в
-	                   		<br>Тячеві</h1>
-	           			</div>
-	       			 </a>
-				</div>
-				<div class="col-sm-6 hidden-xs">
-					<div class="contact">
-           				<p class="desc">Потрібен букет? Дзвоніть!</p>
-           				<p class="phone callibri_phone">
-           					<span class="red">+38 (067) 
-           					</span> 80-44-253
-           				</p>
-          				<p class="address">м. Тячів, вул. Незалежності, 7</p>
-          		    </div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<section class="descriptor">
-		<div class="container">
-			<div class="row descr">Троянди <span class="red descriptor-price">від 30 гивень </span> з доставкою по Тячеву та району!
-        		<p class="desc-sub">Засіб для продовження життя букету до 2-х тижнів <span class="red">в&nbspПОДАРУНОК!</span>
-       			</p>
-   			</div>	
-		</div>
-	</section>
-
-	<section id="main-img">
-		<div class="container-fluid no-padding">
-			<div class="general-img">
-				<div class="action-text-bg hidden-sm hidden-xs">
-               		<div class="text1">Акція!</div>
-             		<div class="text2">Букет 35 троянд Кенія
-                    	<p>(Троянди Кенія 40 см, 5 кольорів троянд на ваш вибір!) </p>
-                    </div>
-                	<div class="text3">
-                    	<div class="old-price">1 050 грн.
-                    	</div>
-                    	<span class="new-price">899<span class="small"> грн.</span></span>
-                	</div>
-            	</div>
-			</div>	
-			<div class="row ">
-            	<button type="button" class="btn-order btn btn-danger btn-lg" data-toggle="modal" data-target="#DlModal" aria-hidden="true">Замовити букет!</button>				
-			</div>		
-		</div>
-		<div class="modal fade" id="DlModal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title">Залиште своє ім'я та телефон і наш менеджер зв'яжеться з Вами, відповість на будь-які питання або допоможе підібрати для Вас букет!
-</h4>
-					</div>
-					<div class="modal-body">
-						<form id="dlform" action="mail.php" method="POST">
-							<input type="text" class="form-control" name="user_name" placeholder="Ваше ім'я" required>
-							<input type="text" class="form-control" name="user_phone" placeholder="Телефон" required>
-							<input type="text" class="form-control" name="user_email" placeholder="E-mail" required>
-							<button type="submit" dldata-dismiss="modal" class="my_btn btn_md btn-block btn_order_sm">Надіслати</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="info hidden-sm hidden-xs">
-		<div class="list-bg">
-			<ul class="no-padding">
-                <li>
-                    <img src="img/crown.png" class="loading">
-                    <p>Величезні букети троянд по оптовим цінам!</p>
-                </li>
-                <li>
-                    <img src="img/snowflake.png" class="loading">
-                    <p>Щоденна поставка <br> квітів <br> 100% свіжість</p>
-                </li>
-                <li>
-                    <img src="img/agent.png" class="loading">
-                    <p>Послуга "Інкогніто"
-                        <br>Подаруємо букет за Вас</p>
-                </li>
-                <li>
-                    <img src="img/bag.png" class="loading">
-                    <p>Доставка квітів <br>по Тячеву за 1 годину <br> або швидше</p>
-                </li>
-                <li>
-                    <img src="img/cash.png" class="loading">
-                    <p>Оплата готівкою/безготівковий розрахунок</p>
-                </li>
-            </ul>
-		</div>
-	</section>
-
-	<section class="row1 hidden">
-		<div class="container mw-960">
-			<div class="row row_title_block">	
-				<div class="col-md-3 col-sm-3 col-lg-4 hidden-xs line_bottom"></div>	
-				<div class="title_block col-sm-6 col-lg-4 col-md-6"  >
-					<h2>
-					<img src="img/29.png" class="loading">
-					</h2>
-				</div>
-				<div class="col-md-3 col-sm-3 col-lg-4 line_bottom"></div>
-			</div>
-			<div class="cont">
-				<div class="row">
-					<button class="btn description_title" data-toggle="collapse" >Опис</button>
-					<div class="description  collapse">
-						<p></p>
-        			</div>  
-				</div>
-			</div>		
-        		      		
-			
-			<div class="row prod">
-				<div class="hidden products_block col-md-4 col-sm-6">					
-					<div class="product_name">БУКEТ 35 ТРОЯНД</div>
-					<div class="badges"><img src="img/action.png" class="loading"></div>
-					<div class="badges-roses"><img src="img/37cm.png" class="loading"></div>
-					<div class="product-image">
-						
-							<img class="loaded img-resposive" src="img/sections/rose_ekvador/25_roz/main_photo.jpg">
-						
-					</div>
-					<div class="product-old-price">1 225 грн.</div>
-						<div class="product-price">999 грн.</div>
-					<button class="btn btn-danger btn_order_sm">замовити</button>
-					<form action="">        
-						</form>					
-				</div>
-			</div>
-		</div>
-	</section>
-
-	
+    </div><!-- /.container -->
 
 
-	<section class="ready-works">
-		<div class="container">
-			<div class="row row_title_block">	
-				<div class="col-md-4 col-sm-3 hidden-xs line_bottom"></div>	
-				<div class="title_block col-sm-6 col-md-4">
-					<h2>НАШІ РОБОТИ</h2>
-				</div>
-				<div class="col-md-4 col-sm-3 line_bottom"></div>				
-			</div>		
-			<div class="container">
-				<div class="row">
-					<div class="slides w-750 ">
-					<div class="nextButton"></div>
-					<div class="prevButton"></div>
-						<div class="slideitem slideitem-1 hidden-sm hidden-xs">
-							<a href="#">
-								<img src="img/ready-works/1.jpg" class= 'showed' alt="Наші роботи">
-								<img src="img/ready-works/2.jpg"  alt="Наші роботи">
-								<img src="img/ready-works/3.jpg" alt="Наші роботи">
-								<img src="img/ready-works/4.jpg" alt="Наші роботи">
-								<img src="img/ready-works/5.jpg" alt="Наші роботи">
-								<img src="img/ready-works/6.jpg" alt="Наші роботи">
-								<img src="img/ready-works/7.jpg" alt="Наші роботи">
-								<img src="img/ready-works/8.jpg" alt="Наші роботи">
-								<img src="img/ready-works/9.jpg" alt="Наші роботи">
-								<img src="img/ready-works/10.jpg" alt="Наші роботи">
-								<img src="img/ready-works/11.jpg" alt="Наші роботи">
-								<img src="img/ready-works/12.jpg" alt="Наші роботи">
-								<img src="img/ready-works/13.jpg" alt="Наші роботи">
-								<img src="img/ready-works/14.jpg" alt="Наші роботи">
-								<img src="img/ready-works/15.jpg" alt="Наші роботи">
-								<img src="img/ready-works/16.jpg" alt="Наші роботи">
-								<img src="img/ready-works/17.jpg" alt="Наші роботи">
-								<img src="img/ready-works/18.jpg" alt="Наші роботи">
-								<img src="img/ready-works/19.jpg" alt="Наші роботи">
-								<img src="img/ready-works/20.jpg" alt="Наші роботи">
-								<img src="img/ready-works/21.jpg" alt="Наші роботи">
-								<img src="img/ready-works/22.jpg" alt="Наші роботи">
-								<img src="img/ready-works/23.jpg" alt="Наші роботи">
-								<img src="img/ready-works/24.jpg" alt="Наші роботи">
-							</a>
-						</div>
-						<div class="slideitem slideitem-2 hidden-sm hidden-xs">
-							<a href="#">
-								<img src="img/ready-works/1.jpg" alt="Наші роботи">
-								<img src="img/ready-works/2.jpg" class= 'showed' alt="Наші роботи">
-								<img src="img/ready-works/3.jpg" alt="Наші роботи">
-								<img src="img/ready-works/4.jpg" alt="Наші роботи">
-								<img src="img/ready-works/5.jpg" alt="Наші роботи">
-								<img src="img/ready-works/6.jpg" alt="Наші роботи">
-								<img src="img/ready-works/7.jpg" alt="Наші роботи">
-								<img src="img/ready-works/8.jpg" alt="Наші роботи">
-								<img src="img/ready-works/9.jpg" alt="Наші роботи">
-								<img src="img/ready-works/10.jpg" alt="Наші роботи">
-								<img src="img/ready-works/11.jpg" alt="Наші роботи">
-								<img src="img/ready-works/12.jpg" alt="Наші роботи">
-								<img src="img/ready-works/13.jpg" alt="Наші роботи">
-								<img src="img/ready-works/14.jpg" alt="Наші роботи">
-								<img src="img/ready-works/15.jpg" alt="Наші роботи">
-								<img src="img/ready-works/16.jpg" alt="Наші роботи">
-								<img src="img/ready-works/17.jpg" alt="Наші роботи">
-								<img src="img/ready-works/18.jpg" alt="Наші роботи">
-								<img src="img/ready-works/19.jpg" alt="Наші роботи">
-								<img src="img/ready-works/20.jpg" alt="Наші роботи">
-								<img src="img/ready-works/21.jpg" alt="Наші роботи">
-								<img src="img/ready-works/22.jpg" alt="Наші роботи">
-								<img src="img/ready-works/23.jpg" alt="Наші роботи">
-								<img src="img/ready-works/24.jpg" alt="Наші роботи">
-							</a>
-						</div>
-						<div class="slideitem slideitem-3">
-							<a href="#">
-								<img src="img/ready-works/1.jpg" alt="Наші роботи">
-								<img src="img/ready-works/2.jpg" alt="Наші роботи">
-								<img src="img/ready-works/3.jpg" class= 'showed' alt="Наші роботи">
-								<img src="img/ready-works/4.jpg" alt="Наші роботи">
-								<img src="img/ready-works/5.jpg" alt="Наші роботи">
-								<img src="img/ready-works/6.jpg" alt="Наші роботи">
-								<img src="img/ready-works/7.jpg" alt="Наші роботи">
-								<img src="img/ready-works/8.jpg" alt="Наші роботи">
-								<img src="img/ready-works/9.jpg" alt="Наші роботи">
-								<img src="img/ready-works/10.jpg" alt="Наші роботи">
-								<img src="img/ready-works/11.jpg" alt="Наші роботи">
-								<img src="img/ready-works/12.jpg" alt="Наші роботи">
-								<img src="img/ready-works/13.jpg" alt="Наші роботи">
-								<img src="img/ready-works/14.jpg" alt="Наші роботи">
-								<img src="img/ready-works/15.jpg" alt="Наші роботи">
-								<img src="img/ready-works/16.jpg" alt="Наші роботи">
-								<img src="img/ready-works/17.jpg" alt="Наші роботи">
-								<img src="img/ready-works/18.jpg" alt="Наші роботи">
-								<img src="img/ready-works/19.jpg" alt="Наші роботи">
-								<img src="img/ready-works/20.jpg" alt="Наші роботи">
-								<img src="img/ready-works/21.jpg" alt="Наші роботи">
-								<img src="img/ready-works/22.jpg" alt="Наші роботи">
-								<img src="img/ready-works/23.jpg" alt="Наші роботи">
-								<img src="img/ready-works/24.jpg" alt="Наші роботи">
-
-							</a>
-						</div>
-						<div class="slideitem slideitem-4 hidden-sm hidden-xs">
-							<a href="#">
-								<img src="img/ready-works/1.jpg" alt="Наші роботи">
-								<img src="img/ready-works/2.jpg" alt="Наші роботи">
-								<img src="img/ready-works/3.jpg" alt="Наші роботи">
-								<img src="img/ready-works/4.jpg" class= 'showed' alt="Наші роботи">
-								<img src="img/ready-works/5.jpg" alt="Наші роботи">
-								<img src="img/ready-works/6.jpg" alt="Наші роботи">
-								<img src="img/ready-works/7.jpg" alt="Наші роботи">
-								<img src="img/ready-works/8.jpg" alt="Наші роботи">
-								<img src="img/ready-works/9.jpg" alt="Наші роботи">
-								<img src="img/ready-works/10.jpg" alt="Наші роботи">
-								<img src="img/ready-works/11.jpg" alt="Наші роботи">
-								<img src="img/ready-works/12.jpg" alt="Наші роботи">
-								<img src="img/ready-works/13.jpg" alt="Наші роботи">
-								<img src="img/ready-works/14.jpg" alt="Наші роботи">
-								<img src="img/ready-works/15.jpg" alt="Наші роботи">
-								<img src="img/ready-works/16.jpg" alt="Наші роботи">
-								<img src="img/ready-works/17.jpg" alt="Наші роботи">
-								<img src="img/ready-works/18.jpg" alt="Наші роботи">
-								<img src="img/ready-works/19.jpg" alt="Наші роботи">
-								<img src="img/ready-works/20.jpg" alt="Наші роботи">
-								<img src="img/ready-works/21.jpg" alt="Наші роботи">
-								<img src="img/ready-works/22.jpg" alt="Наші роботи">
-								<img src="img/ready-works/23.jpg" alt="Наші роботи">
-								<img src="img/ready-works/24.jpg" alt="Наші роботи">
-							</a>
-						</div>
-						<div class="slideitem slideitem-5 hidden-sm hidden-xs">
-							<a href="#">
-								<img src="img/ready-works/1.jpg" alt="Наші роботи">
-								<img src="img/ready-works/2.jpg" alt="Наші роботи">
-								<img src="img/ready-works/3.jpg" alt="Наші роботи">
-								<img src="img/ready-works/4.jpg" alt="Наші роботи">
-								<img src="img/ready-works/5.jpg" class= 'showed' alt="Наші роботи">
-								<img src="img/ready-works/6.jpg" alt="Наші роботи">
-								<img src="img/ready-works/7.jpg" alt="Наші роботи">
-								<img src="img/ready-works/8.jpg" alt="Наші роботи">
-								<img src="img/ready-works/9.jpg" alt="Наші роботи">
-								<img src="img/ready-works/10.jpg" alt="Наші роботи">
-								<img src="img/ready-works/11.jpg" alt="Наші роботи">
-								<img src="img/ready-works/12.jpg" alt="Наші роботи">
-								<img src="img/ready-works/13.jpg" alt="Наші роботи">
-								<img src="img/ready-works/14.jpg" alt="Наші роботи">
-								<img src="img/ready-works/15.jpg" alt="Наші роботи">
-								<img src="img/ready-works/16.jpg" alt="Наші роботи">
-								<img src="img/ready-works/17.jpg" alt="Наші роботи">
-								<img src="img/ready-works/18.jpg" alt="Наші роботи">
-								<img src="img/ready-works/19.jpg" alt="Наші роботи">
-								<img src="img/ready-works/20.jpg" alt="Наші роботи">
-								<img src="img/ready-works/21.jpg" alt="Наші роботи">
-								<img src="img/ready-works/22.jpg" alt="Наші роботи">
-								<img src="img/ready-works/23.jpg" alt="Наші роботи">
-								<img src="img/ready-works/24.jpg" alt="Наші роботи">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>				
-		</div>
-	</section>
-
-	<section class="find_us">
-		<div class="container">
-			<div class="row row_title_block">
-				<div class="col-md-4 col-sm-3 hidden-xs line_bottom"></div>		
-				<div class="title_block col-md-4 col-sm-6" >
-					<h2>ЯК НАС ЗНАЙТИ</h2>
-				</div>	
-				<div class="col-md-4 col-sm-3 line_bottom"></div>
-				<p class="proezd">м. Тячів, вул. Незалежності, 7<br><span style="font-size:80%;">- навпроти готелю "Тячів"<br>- поруч з відділенням ОТР-банку</span>
-       			</p>		
-			</div>				
-			<div class="row search_map">
-				<div class="col-sm-6 left-side ">						
-				</div>
-				<div class="col-sm-6 right-side">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2669.1443966309243!2d23.5729157!3d48.0109201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47379051a838b36f%3A0x5509f426a73540a8!2sKvitomaniya!5e0!3m2!1sru!2sua!4v1513715643117" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>					
-			</div>
-			<div class="row mb-60">
-				<div class="col-md-4 col-sm-6">
-					<div class="logo_wrap">
-						<a href="#">
-	            			<div class="logo">
-	                			<img src="img/logo.jpg" class="loading">
-	                			<h3 class="logo-name red">Квітоманія</h3>
-	               				<p class="logo-desc">Доставка квітів в
-	                   			<br>Тячеві</p>
-	           				</div>
-	       			 	</a>
-	       			</div> 	
-       			</div>	
-			
-				<div class="col-md-4 col-sm-6">
-					<div class="soc_network">
-						<a href="https://www.facebook.com/hashtag/%D0%BA%D0%B2%D1%96%D1%82%D0%BE%D0%BC%D0%B0%D0%BD%D1%96%D1%8F?source=feed_text&story_id=1559840224110745" target="_blanc" title="Facebook" class="soc-facebook"></a>
-						<a href="https://www.instagram.com/kvitomaniya/" title="Instagram" target="_blanc" class="soc-instagram"></a>
-						<a href="https://mail.google.com/mail/u/0/#inbox" target="_blanc" title="E-mail" class="pluso-email"></a>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="contact">
-           				<p class="desc">Потрібен букет? Дзвоніть!</p>
-           				<p class="phone callibri_phone">
-           					<span class="red">+38 (067) 
-           					</span> 80-44-253
-           				</p>
-          				<p class="address">м. Тячів, вул. Незалежності, 7</p>
-          		    </div>					
-				</div>
-			</div>
-			<div class="row">
-				<div class="row footer-copy">
-                  Салон квітів "Квітоманія" працює вже більше 3 років на ринку! За цей час ми зарекомендували себе як стабільна і успішна компанія. Завдяки якісній продукції та сучасному сервісу, ми завоювали довіру і повагу з боку наших покупців. Тепер Ви можете <strong>замовити доставку,</strong> не виходячи з дому! <strong>Доставка по Тячеву</strong> здійснюється протягом 1 години! Кожен, виготовлений букет - це шедевр наших флористів! Поряд з доставкою, в магазині розвинений роздрібний <strong>продаж квітів</strong>. Ви завжди можете приїхати до нас та вибрати <strong>букет троянд</strong> для своїх дорогих людей!</div>				
-			</div>
-			<div class="row">	
-				<button class="btn description_title" data-toggle="collapse" data-target="#decription_footer"style="background: #f6525d;">Про нас</button>			
-                <div class="description collapse" id="decription_footer">
-                    <p>Флористичний магазин <strong>«Квітоманія» </strong>збере для вас <strong>букет</strong> і протягом години доставить його в ваші руки. На нашому зручному сайті просто виберіть і зробіть  <strong>замовлення квітів</strong>. Ви отримаєте ваші <strong>квіти</strong> за годину до міроприємства! Фотографії на сайті повністю відображають те, що ви будете замовляти. Ми фотографуємо <strong>живі квіти</strong> і не використовуємо фотографії з Інтернету! Мы зробимо <strong>доставку квітів</strong>, точно таких же, які ви оберете на нашому сайті. Наша команда завжди готова допомогти вам з <strong>доставкою квітів</strong>! Досить лише сказати нам, що ви хочете придбати і як нам до вас дістатися! <strong>Купити квіти дуже просто</strong>!  Єдина умова - замовлення у вихідні чи неробочі дні оформляйте заздалегідь. У нас ви можете замовити прямо зараз <strong>букети квітів</strong> з <strong>червоних, білих, жовтих и помаранчевих троянд</strong>. Є в наявності <strong>білі, червоні, помаранчеві та малинові тюльпани</strong>. Купуйте у нас чудові <strong>композиції з живих квітів</strong>, які наповнять ваше життя яскравими враженнями та нікого не зможуть залишити байдужими.
-                        <strong>Подарункові кошики</strong> дозволять надовго запам'ятати вашу оригінальність!
-                        <strong>Квіти в кошику</strong>, у <strong>вигляді  серця або весільні букети</strong>! Ми виконаємо будь-які ваші побажання! Ви легко і швидко зможете порадувати кохану людину або урізноманітнити ділову зустріч, а також прикрасити будь-яке <strong>святкове міроприємство</strong>. У продажу є <strong>букети з лілій та альстромерій</strong>. Вы можете придбати <strong>кущові троянди</strong>! Не треба багато платити за радість і щасливі моменти! Наша перевага полягає в тому, що ми віддаємо прекрасні композиції та <strong>квіти дешево. </strong>! В кожний <strong>букет</strong> наш  <strong>флорист</strong> обов'язково покладе спеціальний засіб, щоб ваші <strong>квіти</strong> радували вас і інших людей як можна більше часу! Ваші <strong>троянди и тюльпани и лілії</strong> простоять на 5-7 днів довше. Новинки в нашому каталозі здивують вас і додадуть ексклюзиву. У нових надходженнях <strong>сині та кольорові троянди</strong> з Голландії та Еквадору додадуть дивовижний сенс і подарують незабутні відчуття вам і вашій коханій людині! Всього за <strong>400 гривень</strong> вы можете купити <strong>букет из троянд</strong>. Ціла <strong>корзина квітів</strong> від 550 гривень. Або розкішний <strong>букет з троянд в формі серця</strong> від 850 гривень! Магазин <strong>«Квітоманія»</strong> завжди радий прийти вам на допомогу! Ми порадуємо вас нашим сервісом, а ви порадуєте інших винахідливістю і оперативністю!</p>
-                </div>
-			</div>			
-		</div>				
-	</section>
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="row footer-copy">
-			        “Квітоманія” 2017 © <br><a href="mailto:kvitomaniya@gmail.com">kvitomaniya@gmail.com</a>
-			        <br><span class="callibri_phone1">(067) 80-44-253</span>
-			    </div>
-			</div>
-		</div>
-		<div class="footer_bg"></div>
-	</footer>
-
-
-		
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/common.js"></script>
-	
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
-
+	
