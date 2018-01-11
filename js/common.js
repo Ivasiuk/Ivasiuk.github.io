@@ -254,17 +254,6 @@ $(document).ready(function() {
 	});
 
 
-		/* Send message to your e-mail */	
 
-	$('#dlform').submit(function(){
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function(){
-			console.log("Дякуємо за заявку, ми скоро з Вами зв'яжемось");
-		});
-		return false;
-	});	
 
 });
