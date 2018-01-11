@@ -795,12 +795,12 @@ footer .footer_bg{
     top: 130px;
 }
 
-#form{
+#dlform{
     width: 70%;
     margin: 0 auto;
 }
 
-#form input{
+#dlform input{
     margin-top: 15px;
 }
 
@@ -808,7 +808,7 @@ footer .footer_bg{
     outline: 1px solid red; 
 }
 
-#form .btn_order_sm{
+#dlform .btn_order_sm{
     text-shadow: none;
     box-shadow: none;
     position: inherit;

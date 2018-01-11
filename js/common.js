@@ -175,51 +175,51 @@ $(document).ready(function() {
     }
 
     function Slider(images_1, images_2) {
-    this.images_1 = images_1;
-    this.images_2 = images_2;
-    this.images_3 = images_3;
-    this.images_4 = images_4;
-    this.images_5 = images_5;
-    var one = 0, two = 1, three = 2, four = 3, five = 4;
+	    this.images_1 = images_1;
+	    this.images_2 = images_2;
+	    this.images_3 = images_3;
+	    this.images_4 = images_4;
+	    this.images_5 = images_5;
+	    var one = 0, two = 1, three = 2, four = 3, five = 4;
 
-    this.prev = function () {
-        this.images_1[one].classList.remove('showed');
-        this.images_2[two].classList.remove('showed');
-        this.images_3[three].classList.remove('showed');
-        this.images_4[four].classList.remove('showed');
-        this.images_5[five].classList.remove('showed');
-        one--; two--; three--; four--; five--;
-        one < 0 ? one = this.images_1.length - 1 : one;
-        two < 0 ? two = this.images_2.length - 1 : two;  
-        three < 0 ? three = this.images_3.length - 1 : three;  
-        four < 0 ? four = this.images_4.length - 1 : four;  
-        five < 0 ? five = this.images_5.length - 1 : five;   
-        this.images_1[one].classList.add('showed');
-        this.images_2[two].classList.add('showed');
-        this.images_3[three].classList.add('showed');
-        this.images_4[four].classList.add('showed');
-        this.images_5[five].classList.add('showed');
-    }
+	    this.prev = function () {
+	        this.images_1[one].classList.remove('showed');
+	        this.images_2[two].classList.remove('showed');
+	        this.images_3[three].classList.remove('showed');
+	        this.images_4[four].classList.remove('showed');
+	        this.images_5[five].classList.remove('showed');
+	        one--; two--; three--; four--; five--;
+	        one < 0 ? one = this.images_1.length - 1 : one;
+	        two < 0 ? two = this.images_2.length - 1 : two;  
+	        three < 0 ? three = this.images_3.length - 1 : three;  
+	        four < 0 ? four = this.images_4.length - 1 : four;  
+	        five < 0 ? five = this.images_5.length - 1 : five;   
+	        this.images_1[one].classList.add('showed');
+	        this.images_2[two].classList.add('showed');
+	        this.images_3[three].classList.add('showed');
+	        this.images_4[four].classList.add('showed');
+	        this.images_5[five].classList.add('showed');
+	    }
 
-    this.next = function () {
-        this.images_1[one].classList.remove('showed');
-        this.images_2[two].classList.remove('showed');
-        this.images_3[three].classList.remove('showed');
-        this.images_4[four].classList.remove('showed');
-        this.images_5[five].classList.remove('showed');
-        one++; two++; three++; four++; five++;
-        one >= this.images_1.length ? one = 0 : one;
-        two >= this.images_2.length ? two = 0 : two;
-        three >= this.images_3.length ? three = 0 : three;
-        four >= this.images_4.length ? four = 0 : four;
-        five >= this.images_5.length ? five = 0 : five;
-        this.images_1[one].classList.add('showed');
-        this.images_2[two].classList.add('showed');
-        this.images_3[three].classList.add('showed');
-        this.images_4[four].classList.add('showed');
-        this.images_5[five].classList.add('showed');
-    }
-}
+	    this.next = function () {
+	        this.images_1[one].classList.remove('showed');
+	        this.images_2[two].classList.remove('showed');
+	        this.images_3[three].classList.remove('showed');
+	        this.images_4[four].classList.remove('showed');
+	        this.images_5[five].classList.remove('showed');
+	        one++; two++; three++; four++; five++;
+	        one >= this.images_1.length ? one = 0 : one;
+	        two >= this.images_2.length ? two = 0 : two;
+	        three >= this.images_3.length ? three = 0 : three;
+	        four >= this.images_4.length ? four = 0 : four;
+	        five >= this.images_5.length ? five = 0 : five;
+	        this.images_1[one].classList.add('showed');
+	        this.images_2[two].classList.add('showed');
+	        this.images_3[three].classList.add('showed');
+	        this.images_4[four].classList.add('showed');
+	        this.images_5[five].classList.add('showed');
+	    }
+	}
 
 
 	/* Scrolling */
@@ -247,7 +247,7 @@ $(document).ready(function() {
    		} else {
    			btnTop.fadeOut()
    		}
-   })
+    })
 
 	btnTop.on('click', function(){
 		$("html,body").animate({scrollTop:0}, 900)		
@@ -256,8 +256,7 @@ $(document).ready(function() {
 
 		/* Send message to your e-mail */	
 
-	$('.btn_order_sm').submit( function(){
-		console.log('HOhoho');
+	$('#dlform').submit(function(){
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
