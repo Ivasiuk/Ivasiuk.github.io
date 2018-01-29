@@ -16,6 +16,9 @@ strong {
 	margin-bottom: 60px;
 }
 
+.w-500{
+}
+
 .w-750{
     width: 750px;
 }
@@ -48,8 +51,8 @@ p{
     position: fixed;
     right: 25px;
     padding: 5px 22px;
-    bottom: 20px;
-    z-index: 99999;
+    bottom: 10px;
+    z-index: 999;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -59,6 +62,7 @@ p{
     font-family: 'Open Sans Condensed', sans-serif;
     color: #fff;
     opacity: 0.6;
+    border: 2px solid #fff;
 }
 
 .btn_top:hover{
@@ -83,7 +87,7 @@ nav{
     font-size: 16px;
     font-family: 'Open Sans Condensed', sans-serif;
     width: 100%;
-    z-index: 10000;
+    z-index: 999;
     color: rgb(102, 102, 102);
 }
 
@@ -315,7 +319,7 @@ header .delivery p span {
     padding: 21px 100px;
     height: 100px;
     text-shadow: 0px 3px 2px #cf000e;
-    z-index: 999;
+    z-index: 99;
 }
 
 .btn-order:hover, .btn_order_sm:hover{
@@ -418,8 +422,13 @@ section.row1{
 .row1 .title_block .loading{
     position: absolute;
     top: -60px;
-    right: -65px;
-    z-index: 999;
+    right: -110px;
+    z-index: 99;
+}
+
+.row1 .title_block .img_wrap{
+    position: relative;
+    display: inline-block;
 }
 
 .row .description{
@@ -547,7 +556,7 @@ section.ready-works .slides .prevButton{
     height: 35px;
     background: url(../img/prev_button.png) no-repeat center;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 99;
 }
 
 section.ready-works .slides .nextButton{
@@ -559,7 +568,7 @@ section.ready-works .slides .nextButton{
     height: 35px;
     background: url(../img/next_button.png) no-repeat center;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 99;
 }
 
 section.ready-works .slideitem{
@@ -604,7 +613,7 @@ section.ready-works .slideitem.slideitem-3{
 	height: 330px;
 	top: 0;
 	right: 190px;		
-	z-index: 999;
+	z-index: 959;
 }
 
 section.ready-works .slideitem.slideitem-4{
@@ -818,6 +827,160 @@ footer .footer_bg{
     border-radius: 7px;
 
 }
+
+    /* Popup */
+
+.modal_product{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    /* margin: 11px auto; */
+    display: none;
+    z-index: 99999;
+    box-sizing: border-box;
+}
+
+.overlay_product{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.modal_product img{
+    border-radius: 12px;
+}
+
+.open{
+    display: block;
+}
+
+.modal_product .photos{
+    position: relative;
+    height: 100%;
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    transition: height 1s;
+}
+
+.modal_product .photos .images_wrap{
+    /* text-align: center; */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.modal_product .photos .images{
+    height: 85%;
+}
+
+.modal_product .photos img{
+    display: none;
+    margin: auto;
+    z-index: 0;
+    max-width: 75%;
+    max-height: 90%;
+    transition: opacity 1s;
+    box-shadow: 0 1px 17px #000;
+    border: 6px solid brown;
+}
+
+.modal_product .photos img.showed{
+    display: block;
+    z-index: 99999;
+}
+
+.modal_product .nextButton {
+    filter: blur(1px);
+    position: fixed;
+    right: 40%;
+    bottom: 38px;
+    width: 35px;
+    height: 35px;
+    background: url(../img/next_button.png) no-repeat center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.modal_product .prevButton {
+    filter: blur(1px);
+    position: fixed;
+    left: 40%;
+    bottom: 38px;
+    width: 35px;
+    height: 35px;
+    background: url(../img/prev_button.png) no-repeat center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.modal_product .left, .modal_product .right{
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.modal_product .left:hover, .modal_product .right:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal_product .left{
+    left: 0;
+    z-index: 9;
+}
+
+.modal_product .right{
+    right: 0;
+    z-index: 9;
+}
+
+
+.modal_product .left .arrow{
+    background: url(../img/left.png) no-repeat center;    
+    background-size: contain;
+}
+
+.modal_product .right .arrow{
+    background: url(../img/right.png) no-repeat center;    
+    background-size: contain;
+}
+
+.modal_product .arrow{
+    width: 80%;
+    height: 140px;
+    margin: auto;    
+}
+
+.modal_product .close{
+    top: 7%;
+    right: 27%;
+    float: right;
+    font-size: 4em;
+    font-weight: bolder;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0px 1px 0px #fff;
+    position: absolute;
+    font-family: cursive;
+    z-index: 9;
+}
+
+
+
+
 
 
 

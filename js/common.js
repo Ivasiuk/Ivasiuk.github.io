@@ -3,30 +3,6 @@ $(document).ready(function() {
 		/* MAIN ARRAJ */
 
 	var mainArray = [
-		{	name: 'ТРОЯНДА Еквадор',
-			id: 'rose_ekvador',
-			descriptText: "Троянди не залишать байдужою жодну жінку. Зі смаком оформлений букет еквадорських троянд стане універсальним варіантом презенту для круглої дати, першого побачення або Дня народження.</br>Еквадорська троянда користується попитом серед любителів красивих букетів, вона стрімко завойовує позиції на українському ринку квітів.Основна відмінність такого сорту квітів - великі бутони. Завдяки цьому, букети візуально виглядають ще більш пишними і об'ємними. <br>Хороші сорти еквадорських троянд довгий час не в'януть і зберігають свіжий зовнішній вигляд. Вибирайте ці привабливі бутони, якщо хочете максимально продовжити термін життя свого букету. Такі троянди зазвичай відрізняються більш вигідною ціною, ніж аналоги інших сортів. Так, не переплачуючи зайвих грошей, ви отримуєте гарний букет, який довго буде милувати очі.",
-			descriptId: 'demo_rose_ekvador',
-			sectionClass: 'rose_ekvador',
-			products: [
-				{	name: 'Букет 11 троянд',
-					productsClass: '11_roz',
-					isAction: false,
-					isNovelty: true,
-					oldPrice: 1225,
-					currentPrice: 999,
-					photos: ['main_photo', '1', '2', '3']
-				},
-				{	name: 'Букет 25 троянд',				
-					productsClass: '25_roz',
-					isAction: true,
-					isNovelty: true,
-					oldPrice: 1225,
-					currentPrice: 999,
-					photos: ['main_photo', '1', '2', '3']
-				}
-			]			
-		},
 		{	name: 'ТРОЯНДА Голландія',
 			id: 'rose_holland',
 			descriptText: 'Голландські троянди мають безліч переваг, за які їх цінують і флористи, і просто любителі красивих троянд. Букет таких квітів магазин "Квітоманія" пропонує купити за цілком привабливою ціною, а платити дійсно є за що. </br> Головне достоїнство таких імпортних квітів - їх стійкість до стресів. Вони прекрасно переносять і зберігання, та перевезення. Після зрізання троянди будуть стояти в букеті більше одного тижня, при правильному догляді квіти будуть радувати своєю красою і свіжістю до двох тижнів. </br>Купити голландську троянду в Тячеві можна навіть в зимовий та осінній сезони, а це прекрасна можливість радувати прекрасних жінок незалежно від дати на календарі.',
@@ -42,6 +18,30 @@ $(document).ready(function() {
 			sectionClass: 'rose_ukraine',
 			isAction: true,
 			isNovelty: true
+		},
+		{	name: 'ТРОЯНДА Еквадор',
+			id: 'rose_ekvador',
+			descriptText: "Троянди не залишать байдужою жодну жінку. Зі смаком оформлений букет еквадорських троянд стане універсальним варіантом презенту для круглої дати, першого побачення або Дня народження.</br>Еквадорська троянда користується попитом серед любителів красивих букетів, вона стрімко завойовує позиції на українському ринку квітів.Основна відмінність такого сорту квітів - великі бутони. Завдяки цьому, букети візуально виглядають ще більш пишними і об'ємними. <br>Хороші сорти еквадорських троянд довгий час не в'януть і зберігають свіжий зовнішній вигляд. Вибирайте ці привабливі бутони, якщо хочете максимально продовжити термін життя свого букету. Такі троянди зазвичай відрізняються більш вигідною ціною, ніж аналоги інших сортів. Так, не переплачуючи зайвих грошей, ви отримуєте гарний букет, який довго буде милувати очі.",
+			descriptId: 'demo_rose_ekvador',
+			sectionClass: 'rose_ekvador',
+			products: [
+				{	name: 'Букет 11 троянд',
+					productsClass: '11_roz',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: ['main_photo', '1', '2', '3', '4']
+				},
+				{	name: 'Букет 25 троянд',				
+					productsClass: '25_roz',
+					isAction: true,
+					isNovelty: true,
+					oldPrice: 1225,
+					currentPrice: 999,
+					photos: ['main_photo', '1', '2', '3']
+				}
+			]			
 		},
 		{	name: 'Букети',
 			id: 'bouquet',
@@ -85,13 +85,22 @@ $(document).ready(function() {
 		},
 		{	name: 'Доставка',
 			id: 'delivery',
-			descriptText: '',
+			descriptText: 'Доставка квітів по Тячеву виконується з 8.00 до 22.00 або на вказаний вами час. Вартість послуги доставки по Тячеву - всього від 50 грн. При сумі замовлення квітів та подарунків від 1500 грн і вище - доставка квітів в Тячеві - безкоштовна. Вартість доставки по району уточнюйте. Після дбайливого виконання замовлення менеджер сповістить вас про доставку по смс. Радуйте улюблених свіжими квітами, а ми вам у цьому допоможемо!',
 			descriptId: 'demo_delivery',
 			sectionClass: 'delivery',
 			isAction: true,
 			isNovelty: true
+		},
+		{	name: 'Наші роботи',
+			id: 'ready_works'
 		}
 	];	
+
+	(function(){
+		mainArray.forEach(function(item, i, arr){
+			item.products ? item.products[0].currentPrice = item.products[0].oldPrice + 100 : '';
+		})
+	})()
 
 		/* The main function*/
 	
@@ -99,8 +108,8 @@ $(document).ready(function() {
 
 	function mainFunc(arr){
 		arr.forEach(function(item, i, arr){
-			$('.container ul.menu').append(createNavElements(arr[i]));
-			$('section.ready-works').before(createSection(arr[i]));
+			$('.container ul.menu').append(createNavElements(item));
+			$('section.ready-works').before(createSection(item));
 		})
 			$('section.' + arr[arr.length-1].id).addClass('row_last');
 	};
@@ -118,7 +127,8 @@ $(document).ready(function() {
 		/* Creating sections */
 
 	function createSection(objOfSection){
-		var section = $('section.row1.hidden').clone().removeClass('hidden').attr('data-class', objOfSection.sectionClass);
+		if(!objOfSection.sectionClass) return;
+		var section = $('section.row1.hidden').clone().removeClass('hidden').attr('data-section', objOfSection.sectionClass);
 		section.find('.title_block h2').attr('id', objOfSection.id).text(objOfSection.name);
 		section.find('.cont .description').attr('id', objOfSection.descriptId);
 		section.find('.cont button.description_title').attr('data-target', '#' + objOfSection.descriptId);
@@ -132,11 +142,27 @@ $(document).ready(function() {
 		return section;
 	}
 
+
+		/* Searching popup photo's arraj */
+
+	function popupPhotoArray(array, sect, prod){
+		var j = array.filter(function(number){
+			return number.sectionClass == sect;
+		})[0].products.filter(function(number){
+			return number.productsClass == prod;
+		})[0];
+			j.photos ? j = j.photos.filter(function(number){
+			return number !== 'main_photo'}) : j = undefined;		
+		return j;
+	};	
+
+
 		/* Creating products block */
 
 	function createProductsBlock(objProd){
-		var product = $('section.row1 .products_block.hidden').clone().removeClass('hidden').addClass(objProd.productsClass),
-		img = product.find('.product-image a img'),
+		var product = $('section.row1 .products_block.hidden').first().clone().removeClass('hidden').attr('data-product', objProd.productsClass).addClass(objProd.productsClass),
+		img = product.find('.product-image .main_product_image'),
+		a = product.find('.products_block a'),
 		name = product.find('.product_name'),
 		action = product.find('.badges img'),
 		novelty = product.find('.badges-roses img'),
@@ -147,6 +173,7 @@ $(document).ready(function() {
 		img.attr('src', 'img/sections/rose_ekvador/' + cl + '/main_photo.jpg');
 		console.log(this);
 		name.html(objProd.name);
+		a.attr('data-')
 		objProd.isAction ? action.removeClass('hidden') : action.addClass('hidden');
 		objProd.isNovelty ? novelty.removeClass('hidden') : novelty.addClass('hidden');
 		objProd.oldPrice ? oldPrice.html(objProd.oldPrice + ' грн') : oldPrice.addClass('hidden');
@@ -228,7 +255,6 @@ $(document).ready(function() {
         e.preventDefault();
         
         $('.menu li a').removeClass('active').filter(this).addClass('active');
-        
         var selector = $(this).attr('href'); /* #about - строка */
         var h = $(selector); /* jquery-элемент заголовка */
         
@@ -236,6 +262,16 @@ $(document).ready(function() {
             scrollTop: h.offset().top - 130
         }, 1500);       
     });
+
+   		/* Changing popup-image height  function */
+
+   	function changeHeight(im){
+   		if (im.outerHeight() > ($(window).height() * 0.85)){
+		    $('.modal_product .photos').addClass('w-500');
+		} else {
+			$('.modal_product .photos').removeClass('w-500');
+		}
+   	};
 
 
    		/* Button "Up" */
@@ -253,7 +289,95 @@ $(document).ready(function() {
 		$("html,body").animate({scrollTop:0}, 900)		
 	});
 
+		/* Popup-slider */
 
+	function popupSlider(){	            
+		var images = $('.modal_product .photos img.load');
+	    var slider = new Slider(images);         
+	    
+	    $('.modal_product .left').on('click', function(){
+	        slider.prev();
+	    });
+	    $('body').keydown(function(e){
+	      	if(e.which === 37){slider.prev()}
+	      	else if(e.which === 39){slider.next()}
+	    })
+	 
+	    $('.modal_product .right').on('click', function(){
+	        slider.next();
+	    });
+	  
+	    function Slider(images) {
+		    this.images = images;
+		    var i = 0;
+		    this.prev = function () {
+		        $(this.images[i]).hide();
+		        i--;
+		        if (i < 0) {
+		            i = this.images.length - 1;
+		        }	       
+		        $(this.images[i]).show();
+		    }
+		    this.next = function () {
+		         $(this.images[i]).hide();
+		        i++;
+		        if (i >= this.images.length) {
+		            i = 0;
+		        }
+		        $(this.images[i]).show();
+		    }
+		}
+
+	};	
+
+
+		/* Popup */	
+
+	(function(){
+
+	    function Popup(options){
+	        this.modal = $(options.modal);
+	        this.overlay = $(options.overlay);
+	        
+	        var popup = this;
+	        
+	        this.open = function(ph, pr, s){
+	            popup.overlay.addClass('open');
+	            popup.modal.addClass('open');
+	            if(ph){
+	            	var modal_photos = $('.modal_product .photos .images_wrap');
+	            	$('.modal_product .photos img').remove();
+	            	ph.forEach(function(item, i, arr){
+	            		modal_photos.append($('<img>').addClass('load').attr('src', 'img/sections/' + s + '/' + pr + '/' + item + '.jpg').attr('alt', 'Photo'));
+	            	})	 
+	            	$($('.modal_product .photos img.load')[0]).show();           
+	            }	
+	            popupSlider();
+	        }	        
+	        this.close = function(){
+	            popup.overlay.removeClass('open');
+	            popup.modal.removeClass('open');
+	            $('.modal_product .photos img.load').remove();
+	        }	        
+	        $('.modal_product .close').on('click', popup.close);
+	        $('body').keydown(function(e){
+	        	if(e.which === 27){popup.close()}
+	        })
+	    }
+
+	        var p = new Popup({
+		        modal: '.modal_product',
+		        overlay: '.overlay_product'
+	        });	        
+	        $('.products_block a').on('click', function(e){
+				e.preventDefault();
+				var section = $(e.target.closest('section')).attr('data-section');
+				var product = $(e.target.closest('.products_block')).attr('data-product');
+				var photoArray = popupPhotoArray(mainArray, section, product);
+				p.open(photoArray, product, section);
+			});	
+	           
+	})();
 
 
 });
