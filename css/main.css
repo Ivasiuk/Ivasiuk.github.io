@@ -889,7 +889,6 @@ footer .footer_bg{
     max-height: 90%;
     transition: opacity 1s;
     box-shadow: 0 1px 17px #000;
-    border: 6px solid brown;
 }
 
 .modal_product .photos img.showed{
@@ -933,10 +932,6 @@ footer .footer_bg{
     display: flex;
 }
 
-.modal_product .left:hover, .modal_product .right:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
 .modal_product .left{
     left: 0;
     z-index: 9;
@@ -965,17 +960,18 @@ footer .footer_bg{
 }
 
 .modal_product .close{
-    top: 7%;
-    right: 27%;
+    top: 1%;
+    right: 3%;
     float: right;
-    font-size: 4em;
-    font-weight: bolder;
+    font-size: 2.5em;
+    /* font-weight: 900; */
     line-height: 1;
-    color: #000;
-    text-shadow: 0px 1px 0px #fff;
+    color: #fff;
+    text-shadow: 1px 0px 10px #000;
     position: absolute;
-    font-family: cursive;
-    z-index: 9;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    /* font-style: italic; */
+    z-index: 99;
 }
 
 

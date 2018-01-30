@@ -25,21 +25,21 @@ $(document).ready(function() {
 			descriptId: 'demo_rose_ekvador',
 			sectionClass: 'rose_ekvador',
 			products: [
-				{	name: 'Букет 11 троянд',
+				{	name: 'Букет 11 троянд ',
 					productsClass: '11_roz',
 					isAction: false,
 					isNovelty: true,
 					oldPrice: 12+5,
 					currentPrice: 5,
-					photos: ['main_photo', '1', '2', '3', '4']
+					photos: ['m', '1', '2', '3', '4']
 				},
-				{	name: 'Букет 25 троянд',				
+				{					
 					productsClass: '25_roz',
 					isAction: true,
 					isNovelty: true,
-					oldPrice: 1225,
+					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['main_photo', '1', '2', '3']
+					photos: ['m', '1', '2', '3']
 				}
 			]			
 		},
@@ -152,7 +152,7 @@ $(document).ready(function() {
 			return number.productsClass == prod;
 		})[0];
 			j.photos ? j = j.photos.filter(function(number){
-			return number !== 'main_photo'}) : j = undefined;		
+			return number !== 'm'}) : j = undefined;		
 		return j;
 	};	
 
@@ -170,7 +170,7 @@ $(document).ready(function() {
 		price = product.find('.product-price'),
 		cl = objProd.productsClass;
 
-		img.attr('src', 'img/sections/rose_ekvador/' + cl + '/main_photo.jpg');
+		img.attr('src', 'img/sections/rose_ekvador/' + cl + '/m.jpg');
 		console.log(this);
 		name.html(objProd.name);
 		a.attr('data-')
