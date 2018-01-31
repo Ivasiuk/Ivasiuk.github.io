@@ -3,20 +3,105 @@ $(document).ready(function() {
 		/* MAIN ARRAJ */
 
 	var mainArray = [
-		{	name: 'ТРОЯНДА Голландія',
-			id: 'rose_holland',
-			descriptText: 'Голландські троянди мають безліч переваг, за які їх цінують і флористи, і просто любителі красивих троянд. Букет таких квітів магазин "Квітоманія" пропонує купити за цілком привабливою ціною, а платити дійсно є за що. </br> Головне достоїнство таких імпортних квітів - їх стійкість до стресів. Вони прекрасно переносять і зберігання, та перевезення. Після зрізання троянди будуть стояти в букеті більше одного тижня, при правильному догляді квіти будуть радувати своєю красою і свіжістю до двох тижнів. </br>Купити голландську троянду в Тячеві можна навіть в зимовий та осінній сезони, а це прекрасна можливість радувати прекрасних жінок незалежно від дати на календарі.',
-			descriptId: 'demo_rose_holland',
-			sectionClass: 'rose_holland',
-			isAction: true,
-			isNovelty: true
+		{	name: 'Весілля',
+			id: 'wedding',
+			descriptText: 'Весільний букет нареченої - невід\'ємна частина весільного образу, який надає особливу романтичність і ніжність дівчині в шлюбній сукні. Важлива роль букету в день весілля підкреслює готовність молодої дівчини одружитися, коли вона приймає флористичне диво з рук свого коханого, передаючи свою естафету щасливої ​​нареченої однієї зі своїх незаміжніх подруг в кінці вечора.',			descriptId: 'demo_wedding',
+			sectionClass: 'wedding',
+			products: [
+				{	name: 'Букет 11 троянд ',
+					productsClass: '1',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: ['m', '1', '2', '3', '4']
+				},
+				{					
+					productsClass: '2',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '3',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '4',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '5',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '6',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '8',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '9',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '10',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '11',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '12',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '13',
+					isAction: false,
+					isNovelty: true,
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				}
+			]
 		},
 		{	name: 'ТРОЯНДА Українська',
 			id: 'rose_ukraine',
 			descriptText: 'Якщо вам необхідно привітати дорогу людину зі святом, а зробити це особисто не представляється можливим, то ви можете просто замовити скромний, але дуже милий букет з доставкою за вказаною адресою і в потрібний час. </br>Можемо запропонувати вам троянди вітчизняного виробництва, оскільки вони доступні майже цілий рік і мають відмінну конкурентну ціну.',
 			descriptId: 'demo_rose_ukraine',
 			sectionClass: 'rose_ukraine',
-			isAction: true,
+			isAction: false,
 			isNovelty: true
 		},
 		{	name: 'ТРОЯНДА Еквадор',
@@ -35,7 +120,7 @@ $(document).ready(function() {
 				},
 				{					
 					productsClass: '25_roz',
-					isAction: true,
+					isAction: false,
 					isNovelty: true,
 					oldPrice: 0,
 					currentPrice: 999,
@@ -48,7 +133,7 @@ $(document).ready(function() {
 			descriptText: 'Всі букети, представлені в каталозі нашої компанії, відрізняються стильним зовнішнім виглядом і просто фантастично красиві. </br>Велику цікавість представляють авторські роботи, складені з різних квітів і флористичної зелені. Ці композиції дуже подобаються нашим клієнтам - вони оригінальні і представляють своєрідне відображення внутрішнього світу автора. При бажанні купити квіти недорого, розраховуючи при цьому на неповторність подарунка.',
 			descriptId: 'demo_bouquet',
 			sectionClass: 'bouquet',
-			isAction: true,
+			isAction: false,
 			isNovelty: true
 		},
 		{	name: 'Серце з троянд',
@@ -56,7 +141,7 @@ $(document).ready(function() {
 			descriptText: 'Букети з троянд у вигляді серця - оригінальний подарунок коханій людині! Це не просто купити квіти, а передати цілу бурю емоцій! </br>Кожна композиція квітів - це шедевр наших флористів. Магазин квітів "Квітоманія" - Ваш особистий помічник в складанні будь-якої складності композицій! ',
 			descriptId: 'demo_heart',
 			sectionClass: 'heart',
-			isAction: true,
+			isAction: false,
 			isNovelty: true
 		},
 		{	name: 'квіти  в коробці',
@@ -72,7 +157,7 @@ $(document).ready(function() {
 			descriptText: 'Якщо квіти поштучно або букети Вам не підходять по якихось причин, то можливо рішення купити кошик квітів в "Квітоманії" це саме той варіант, який Ви шукали. </br>Квіткова корзина це вже більш солідне рішення. Як в плані практичності, так і в плані мальовничості. Кошик з квітами зручніше нести і ефектніше вручати. Тільки уявіть як ви даруєте шикарну корзину квітів. Її можна поставити в будь-якому місці, а це значить що Ваш подарунок буде стояти у всіх на виду і виділятися серед всіх інших подарованих квітів. Для неї не потрібно вази, що теж дуже зручно. Сам кошик, в якому будуть знаходитися квіти теж грає роль відмінного декору.</br>Ви можете навіть сказати на яку суму хочете замовити кошик з квітами і ми підберемо для Вас кілька чудових рішень. Якщо Ви хочете купити таку квіткову корзину, якої немає в нашому асортименті то просто повідомте нам всі її деталі. У Вас є її фото? Відмінно! Скиньте нам на пошту або на Viber і ми зробимо все в точності як Ви хочете.',
 			descriptId: 'demo_flower_basket',
 			sectionClass: 'flower_basket',
-			isAction: true,
+			isAction: false,
 			isNovelty: true
 		},
 		{	name: 'Троянди-гіганти',
@@ -80,7 +165,7 @@ $(document).ready(function() {
 			descriptText: 'Великі троянди в Тячеві від магазину "Квітоманія" - це ексклюзивні позиції в квітковому світі, які так люблять жінки. Купити великі, метрові троянди &nbsp; і навіть вище (<strong>метрові -</strong> <strong>100 см, півтораметрові - 150 см, а також троянди 160 см</strong>) вы зможете в нашому магазині. Великі, довгі, високі, величезні троянди &nbsp; - як тільки не називають метрові і &nbsp;<span class="word w46">півтораметрові</span>&nbsp;<span class="word w47">троянди</span>.&nbsp; У будь-якому випадку, великі, величезні троянди - це елітний варіант подарунку до якого жодна дівчина не проявить байдужість. Більш того таким подарунком з великих троянд ви підкреслите свій статус.',
 			descriptId: 'demo_rose_giant',
 			sectionClass: 'rose_giant',
-			isAction: true,
+			isAction: false,
 			isNovelty: true
 		},
 		{	name: 'Доставка',
@@ -88,7 +173,7 @@ $(document).ready(function() {
 			descriptText: 'Доставка квітів по Тячеву виконується з 8.00 до 22.00 або на вказаний вами час. Вартість послуги доставки по Тячеву - всього від 50 грн. При сумі замовлення квітів та подарунків від 1500 грн і вище - доставка квітів в Тячеві - безкоштовна. Вартість доставки по району уточнюйте. Після дбайливого виконання замовлення менеджер сповістить вас про доставку по смс. Радуйте улюблених свіжими квітами, а ми вам у цьому допоможемо!',
 			descriptId: 'demo_delivery',
 			sectionClass: 'delivery',
-			isAction: true,
+			isAction: false,
 			isNovelty: true
 		},
 		{	name: 'Наші роботи',
@@ -135,7 +220,7 @@ $(document).ready(function() {
 		section.find('.cont .row p').html(objOfSection.descriptText);
 		if(objOfSection.products){
 			objOfSection.products.forEach(function(item, i, arr) {
-				section.find('.row.prod').append(createProductsBlock(objOfSection.products[i]));	
+				section.find('.row.prod').append(createProductsBlock(objOfSection.products[i], objOfSection.sectionClass));	
 			});
 		}	
 
@@ -159,7 +244,7 @@ $(document).ready(function() {
 
 		/* Creating products block */
 
-	function createProductsBlock(objProd){
+	function createProductsBlock(objProd, section){
 		var product = $('section.row1 .products_block.hidden').first().clone().removeClass('hidden').attr('data-product', objProd.productsClass).addClass(objProd.productsClass),
 		img = product.find('.product-image .main_product_image'),
 		a = product.find('.products_block a'),
@@ -170,7 +255,7 @@ $(document).ready(function() {
 		price = product.find('.product-price'),
 		cl = objProd.productsClass;
 
-		img.attr('src', 'img/sections/rose_ekvador/' + cl + '/m.jpg');
+		img.attr('src', 'img/sections/' + section + '/' + cl + '/m.jpg');
 		console.log(this);
 		name.html(objProd.name);
 		a.attr('data-')
@@ -378,6 +463,23 @@ $(document).ready(function() {
 			});	
 	           
 	})();
+
+		$("#dlform").submit(function() { //Change
+			alert('ew');
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 
 
 });

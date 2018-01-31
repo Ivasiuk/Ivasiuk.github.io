@@ -1,8 +1,3 @@
-body{
-	font-family: "RalewayRegular", sans-serif;
-	font-size: 16px;
-	min-width: 320px;
-}
 
 .red{
 	color: #ff4461;
@@ -59,7 +54,7 @@ p{
     background-color: #f6525d;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     color: #fff;
     opacity: 0.6;
     border: 2px solid #fff;
@@ -85,7 +80,7 @@ nav{
     position: fixed;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     width: 100%;
     z-index: 999;
     color: rgb(102, 102, 102);
@@ -142,6 +137,10 @@ header .logo p{
     line-height: 1.2;
 }
 
+.logo p{
+    font-family: "RalewayRegular", sans-serif;
+}
+
 header h1{
     font-family: 'Lobster', cursive;
     margin: 0 0 0 35px;
@@ -161,7 +160,7 @@ header a{
 }
 
 header .delivery {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     font-size: 22px;
     color: #ff4461;
     text-transform: uppercase;
@@ -179,7 +178,7 @@ header .delivery p span {
 }
 
 .contact {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     position: relative;
     font-weight: 600;
 }
@@ -209,7 +208,7 @@ header .delivery p span {
 
 .descriptor .descr {
     margin-top: 15px;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 35px;
@@ -249,7 +248,7 @@ header .delivery p span {
 }
 
 .general-img .text1{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     font-size: 60px;
     color: #FFF;
     text-transform: uppercase;
@@ -263,7 +262,7 @@ header .delivery p span {
 
 .general-img .text2{
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     font-weight: 800;
     font-style: italic;
     font-size: 36px;
@@ -278,11 +277,11 @@ header .delivery p span {
 .general-img .text2 p{
 	color: #999;
     font-size: 18px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
 }
 
 .general-img .text3{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     margin: 2px 30px;
     position: relative;
     float: left;
@@ -307,7 +306,7 @@ header .delivery p span {
 }
 
 .btn-order{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     position: relative;
     margin-top: -265px;
     box-shadow: 0px 4px 0px 0px #cf000e;
@@ -386,7 +385,7 @@ header .delivery p span {
 .info li p{
 	padding-top: 10px;
     line-height: 18px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
@@ -407,7 +406,7 @@ section.row1{
 }
 
 .title_block h2{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
 	color: #fe6b70;
 	font-size: 46px;
 	font-weight: 800;
@@ -444,7 +443,7 @@ section.row1{
     color: #fff;
     padding: 4px 60px;
     background-color: #9d8c8d;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     font-size: 18px;
     top: 17px;
     position: relative;
@@ -466,7 +465,7 @@ section.row1{
     background: url(../img/product-border.png) no-repeat 0 55px;
     margin: auto 15px;
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     vertical-align: top;
     position: relative;
     margin-bottom: 20px;
@@ -691,7 +690,7 @@ section.find_us .title_block h2{
 section.find_us .row_title_block p{
 	color: #5f5252;
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     margin-top: 70px;
@@ -774,7 +773,7 @@ section.find_us .soc_network a.pluso-email{
 
 section.find_us .footer-copy{
 	margin: 60px 0;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', Arial Narrow, sans-serif;
 	font-size: 20px;
 }
 
