@@ -10,89 +10,342 @@ $(document).ready(function() {
 			products: [
 				{	name: 'Букет 11 троянд ',
 					productsClass: '1',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 12+5,
 					currentPrice: 5,
-					photos: ['m', '1', '2', '3', '4']
+					photos: ['m', '1', '2', '3', '4', '5', '6', '7']
 				},
 				{					
 					productsClass: '2',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: ['m', '1', '2', '3', '4', '5']
 				},{					
 					productsClass: '3',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: ['m', '1', '2', '3', '4', '5']
 				},{					
 					productsClass: '4',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: ['m', '1', '2', '3', '4', '5', '6']
 				},{					
 					productsClass: '5',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
 					photos: ['m', '1', '2', '3']
 				},{					
 					productsClass: '6',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '37',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: ['m', '1']
+				},{					
+					productsClass: '7',
+					isAction: '',
+					isNovelty: '100',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
 				},{					
 					productsClass: '8',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '100',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: ['m', '1']
 				},{					
+					name: 'Оздоблення авто ',
 					productsClass: '9',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: 'new',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: ['m', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14']
 				},{					
 					productsClass: '10',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: ['m', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']
 				},{					
 					productsClass: '11',
-					isAction: false,
-					isNovelty: true,
-					oldPrice: 0,
+					isAction: 'hit',
+					isNovelty: '80',
+					oldPrice: '',
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: ['m', '1', '2', '3', '4', '5', '6', '7']
 				},{					
 					productsClass: '12',
-					isAction: false,
-					isNovelty: true,
+					isAction: 'action',
+					isNovelty: '60',
 					oldPrice: 0,
 					currentPrice: 999,
 					photos: ['m', '1', '2', '3']
 				},{					
 					productsClass: '13',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '14',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '15',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '16',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '17',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '18',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2']
+				},{					
+					productsClass: '19',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2']
+				},{					
+					productsClass: '20',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2']
+				},{					
+					productsClass: '21',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16']
+				},{					
+					productsClass: '22',
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
 					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '23',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3']
+				},{					
+					productsClass: '24',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2']
+				},{					
+					productsClass: '25',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '26',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '27',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2']
+				},{					
+					productsClass: '28',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2']
+				},{					
+					productsClass: '29',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1', '2', '3', '4', '5', '6']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
+				},{					
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					currentPrice: 999,
+					photos: ['m', '1']
 				}
 			]
 		},
@@ -101,8 +354,8 @@ $(document).ready(function() {
 			descriptText: 'Якщо вам необхідно привітати дорогу людину зі святом, а зробити це особисто не представляється можливим, то ви можете просто замовити скромний, але дуже милий букет з доставкою за вказаною адресою і в потрібний час. </br>Можемо запропонувати вам троянди вітчизняного виробництва, оскільки вони доступні майже цілий рік і мають відмінну конкурентну ціну.',
 			descriptId: 'demo_rose_ukraine',
 			sectionClass: 'rose_ukraine',
-			isAction: false,
-			isNovelty: true
+			isAction: '',
+			isNovelty: ''
 		},
 		{	name: 'ТРОЯНДА Еквадор',
 			id: 'rose_ekvador',
@@ -112,17 +365,18 @@ $(document).ready(function() {
 			products: [
 				{	name: 'Букет 11 троянд ',
 					productsClass: '11_roz',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 12+5,
 					currentPrice: 5,
 					photos: ['m', '1', '2', '3', '4']
 				},
 				{					
 					productsClass: '25_roz',
-					isAction: false,
-					isNovelty: true,
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 0,
+					from: true,
 					currentPrice: 999,
 					photos: ['m', '1', '2', '3']
 				}
@@ -133,48 +387,48 @@ $(document).ready(function() {
 			descriptText: 'Всі букети, представлені в каталозі нашої компанії, відрізняються стильним зовнішнім виглядом і просто фантастично красиві. </br>Велику цікавість представляють авторські роботи, складені з різних квітів і флористичної зелені. Ці композиції дуже подобаються нашим клієнтам - вони оригінальні і представляють своєрідне відображення внутрішнього світу автора. При бажанні купити квіти недорого, розраховуючи при цьому на неповторність подарунка.',
 			descriptId: 'demo_bouquet',
 			sectionClass: 'bouquet',
-			isAction: false,
-			isNovelty: true
+			isAction: '',
+			isNovelty: ''
 		},
 		{	name: 'Серце з троянд',
 			id: 'heart',
 			descriptText: 'Букети з троянд у вигляді серця - оригінальний подарунок коханій людині! Це не просто купити квіти, а передати цілу бурю емоцій! </br>Кожна композиція квітів - це шедевр наших флористів. Магазин квітів "Квітоманія" - Ваш особистий помічник в складанні будь-якої складності композицій! ',
 			descriptId: 'demo_heart',
 			sectionClass: 'heart',
-			isAction: false,
-			isNovelty: true
+			isAction: '',
+			isNovelty: ''
 		},
 		{	name: 'квіти  в коробці',
 			id: 'flower_box',
 			descriptText: 'Квіти в коробках - це новий, найоригінальніший і красивий варіант подарунка для рідних і близьких людей. Тенденція дарувати букети в коробках прийшла в нашу країну зовсім недавно і родом вона з Європи. На даний момент такий подарунок вважається найромантичнішим для коханих дівчат і дружин. </br>Існують різні варіанти складання композицій в капелюшних коробках. Наш магазин пропонує величезний вибір коробок різних розмірів і колірної гами, які можна наповнити великим асортиментом свіжозрізаних квітів. </br>Наші професійні флористи допоможуть підібрати коробку з огляду на всі Ваші побажання, а також оформлять Ваш букет максимально незвично і оригінально.',
 			descriptId: 'demo_flower_box',
 			sectionClass: 'flower_box',
-			isAction: false,
-			isNovelty: true
+			isAction: '',
+			isNovelty: ''
 		},
 		{	name: 'Корзини з квітами',
 			id: 'flower_basket',
 			descriptText: 'Якщо квіти поштучно або букети Вам не підходять по якихось причин, то можливо рішення купити кошик квітів в "Квітоманії" це саме той варіант, який Ви шукали. </br>Квіткова корзина це вже більш солідне рішення. Як в плані практичності, так і в плані мальовничості. Кошик з квітами зручніше нести і ефектніше вручати. Тільки уявіть як ви даруєте шикарну корзину квітів. Її можна поставити в будь-якому місці, а це значить що Ваш подарунок буде стояти у всіх на виду і виділятися серед всіх інших подарованих квітів. Для неї не потрібно вази, що теж дуже зручно. Сам кошик, в якому будуть знаходитися квіти теж грає роль відмінного декору.</br>Ви можете навіть сказати на яку суму хочете замовити кошик з квітами і ми підберемо для Вас кілька чудових рішень. Якщо Ви хочете купити таку квіткову корзину, якої немає в нашому асортименті то просто повідомте нам всі її деталі. У Вас є її фото? Відмінно! Скиньте нам на пошту або на Viber і ми зробимо все в точності як Ви хочете.',
 			descriptId: 'demo_flower_basket',
 			sectionClass: 'flower_basket',
-			isAction: false,
-			isNovelty: true
+			isAction: '',
+			isNovelty: ''
 		},
 		{	name: 'Троянди-гіганти',
 			id: 'rose_giant',
 			descriptText: 'Великі троянди в Тячеві від магазину "Квітоманія" - це ексклюзивні позиції в квітковому світі, які так люблять жінки. Купити великі, метрові троянди &nbsp; і навіть вище (<strong>метрові -</strong> <strong>100 см, півтораметрові - 150 см, а також троянди 160 см</strong>) вы зможете в нашому магазині. Великі, довгі, високі, величезні троянди &nbsp; - як тільки не називають метрові і &nbsp;<span class="word w46">півтораметрові</span>&nbsp;<span class="word w47">троянди</span>.&nbsp; У будь-якому випадку, великі, величезні троянди - це елітний варіант подарунку до якого жодна дівчина не проявить байдужість. Більш того таким подарунком з великих троянд ви підкреслите свій статус.',
 			descriptId: 'demo_rose_giant',
 			sectionClass: 'rose_giant',
-			isAction: false,
-			isNovelty: true
+			isAction: '',
+			isNovelty: ''
 		},
 		{	name: 'Доставка',
 			id: 'delivery',
 			descriptText: 'Доставка квітів по Тячеву виконується з 8.00 до 22.00 або на вказаний вами час. Вартість послуги доставки по Тячеву - всього від 50 грн. При сумі замовлення квітів та подарунків від 1500 грн і вище - доставка квітів в Тячеві - безкоштовна. Вартість доставки по району уточнюйте. Після дбайливого виконання замовлення менеджер сповістить вас про доставку по смс. Радуйте улюблених свіжими квітами, а ми вам у цьому допоможемо!',
 			descriptId: 'demo_delivery',
 			sectionClass: 'delivery',
-			isAction: false,
-			isNovelty: true
+			isAction: '',
+			isNovelty: ''
 		},
 		{	name: 'Наші роботи',
 			id: 'ready_works'
@@ -259,10 +513,11 @@ $(document).ready(function() {
 		console.log(this);
 		name.html(objProd.name);
 		a.attr('data-')
-		objProd.isAction ? action.removeClass('hidden') : action.addClass('hidden');
-		objProd.isNovelty ? novelty.removeClass('hidden') : novelty.addClass('hidden');
+		objProd.isAction ? action.removeClass('hidden').attr('src', 'img/' + objProd.isAction + '.png') : action.addClass('hidden');
+		objProd.isNovelty ? novelty.removeClass('hidden').attr('src', 'img/' + objProd.isNovelty + '.png') : novelty.addClass('hidden');
 		objProd.oldPrice ? oldPrice.html(objProd.oldPrice + ' грн') : oldPrice.addClass('hidden');
 		objProd.currentPrice ? price.html(objProd.currentPrice + ' грн') : price.addClass('hidden');
+		objProd.from ? price.html('від ' + price.html()) : '';
 
 
 		return product;

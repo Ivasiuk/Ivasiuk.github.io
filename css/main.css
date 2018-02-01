@@ -499,7 +499,7 @@ section.row1{
     height: 136px;
     z-index: 9;
     left: 7px;
-    top: 61px;
+    top: 62px;
 }
 
 .row1 .products_block .product-old-price{
@@ -517,6 +517,7 @@ section.row1{
 
 .row1 .products_block .product_name{
 	font-size: 30px;
+    text-transform: uppercase;
 }
 
 section.row_last {
@@ -959,19 +960,22 @@ footer .footer_bg{
 }
 
 .modal_product .close{
-    top: 65px;
-    right: 30px;
+    display: block;
+    height: 40px;
+    width: 105px;
+    padding: 0 auto;
+    text-align: center;
+    top: 70px;
+    right: 21px;
     float: right;
-    font-size: 2.5em;
-    /* font-weight: 900; */
+    font-size: 2em;
     line-height: 1;
     color: #fff;
     text-shadow: 1px 0px 10px #000;
     position: absolute;
-    font-family: "RalewayRegular", sans-serif;
-    /* font-style: italic; */
+    font-family: 'Caveat', cursive;
+    font-style: italic;
     z-index: 99;
-}
 
 
 
