@@ -555,7 +555,7 @@ section.ready-works .slides .prevButton{
     height: 35px;
     background: url(../img/prev_button.png) no-repeat center;
     cursor: pointer;
-    z-index: 99;
+    z-index: 999;
 }
 
 section.ready-works .slides .nextButton{
@@ -567,7 +567,7 @@ section.ready-works .slides .nextButton{
     height: 35px;
     background: url(../img/next_button.png) no-repeat center;
     cursor: pointer;
-    z-index: 99;
+    z-index: 999;
 }
 
 section.ready-works .slideitem{
