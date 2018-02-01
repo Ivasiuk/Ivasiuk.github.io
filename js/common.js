@@ -268,6 +268,48 @@ $(document).ready(function() {
 		return product;
 	}
 
+		/* Creating photos 'Our works' */
+
+	(function(){
+		var countPhoto = 18,
+		slideitem1 = $('.slides .slideitem-1 a'),
+		slideitem2 = $('.slides .slideitem-2 a'),
+		slideitem3 = $('.slides .slideitem-3 a'),
+		slideitem4 = $('.slides .slideitem-4 a'),
+		slideitem5 = $('.slides .slideitem-5 a');
+
+		for (var i = 1; i < countPhoto; i++) {
+			slideitem1.append($('<img>', {
+			alt:  'Наші роботи',
+			src: 'img/ready-works/' + i + '.jpg'
+			}));
+			slideitem2.append($('<img>', {
+			alt:  'Наші роботи',
+			src: 'img/ready-works/' + i + '.jpg'
+			}));
+			slideitem3.append($('<img>', {
+			alt:  'Наші роботи',
+			src: 'img/ready-works/' + i + '.jpg'
+			}));
+			slideitem4.append($('<img>', {
+			alt:  'Наші роботи',
+			src: 'img/ready-works/' + i + '.jpg'
+			}));
+			slideitem5.append($('<img>', {
+			alt:  'Наші роботи',
+			src: 'img/ready-works/' + i + '.jpg'
+			}));
+		}
+		$(slideitem1.find('img')[0]).addClass('showed');
+		$(slideitem2.find('img')[1]).addClass('showed');
+		$(slideitem3.find('img')[2]).addClass('showed');
+		$(slideitem4.find('img')[3]).addClass('showed');
+		$(slideitem5.find('img')[4]).addClass('showed');
+	
+
+		
+	})()
+
 		/* Slider */
 
 	var images_1 = document.querySelectorAll('.ready-works .slides .slideitem-1 img'),

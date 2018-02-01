@@ -32,7 +32,6 @@
 	section.ready-works .slides .nextButton{
 		right: 0%;
 	}
-
 }
 
 /* Small Devices, Tablets */
@@ -206,7 +205,6 @@
 	section.ready-works .slides .nextButton{
 		top: 107px
 	}
-
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
