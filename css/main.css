@@ -516,7 +516,9 @@ section.row1{
 }
 
 .row1 .products_block .product_name{
-	font-size: 30px;
+    margin-top: 12px;
+    margin-bottom: -17px;
+	font-size: 28px;
     text-transform: uppercase;
 }
 

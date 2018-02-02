@@ -14,7 +14,7 @@ $(document).ready(function() {
 					isNovelty: '',  /* 'new', 60, 70, 80, 100 */
 					oldPrice: 12+5,
 					currentPrice: 5,
-					photos: 41
+					photos: 40
 				},
 				{					
 					name: 'Оздоблення авто',
@@ -331,37 +331,229 @@ $(document).ready(function() {
 				}
 			]
 		},
-		{	name: 'ТРОЯНДА Українська',
-			id: 'rose_ukraine',
-			descriptText: 'Якщо вам необхідно привітати дорогу людину зі святом, а зробити це особисто не представляється можливим, то ви можете просто замовити скромний, але дуже милий букет з доставкою за вказаною адресою і в потрібний час. </br>Можемо запропонувати вам троянди вітчизняного виробництва, оскільки вони доступні майже цілий рік і мають відмінну конкурентну ціну.',
-			descriptId: 'demo_rose_ukraine',
-			sectionClass: 'rose_ukraine',
-			isAction: '',
-			isNovelty: ''
-		},
-		{	name: 'ТРОЯНДА Еквадор',
-			id: 'rose_ekvador',
+		{	name: 'Букети з троянд',
+			id: 'roses',
 			descriptText: "Троянди не залишать байдужою жодну жінку. Зі смаком оформлений букет еквадорських троянд стане універсальним варіантом презенту для круглої дати, першого побачення або Дня народження.</br>Еквадорська троянда користується попитом серед любителів красивих букетів, вона стрімко завойовує позиції на українському ринку квітів.Основна відмінність такого сорту квітів - великі бутони. Завдяки цьому, букети візуально виглядають ще більш пишними і об'ємними. <br>Хороші сорти еквадорських троянд довгий час не в'януть і зберігають свіжий зовнішній вигляд. Вибирайте ці привабливі бутони, якщо хочете максимально продовжити термін життя свого букету. Такі троянди зазвичай відрізняються більш вигідною ціною, ніж аналоги інших сортів. Так, не переплачуючи зайвих грошей, ви отримуєте гарний букет, який довго буде милувати очі.",
-			descriptId: 'demo_rose_ekvador',
-			sectionClass: 'rose_ekvador',
+			descriptId: 'demo_rose',
+			sectionClass: 'roses',
 			products: [
 				{	name: 'Букет 11 троянд ',
-					productsClass: '11_roz',
+					productsClass: '1',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 12+5,
 					currentPrice: 5,
-					photos: 4
+					photos: 5
 				},
 				{	
 					name: 'Весільний букет',				
-					productsClass: '25_roz',
+					productsClass: '2',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 1
+				},
+				{	
+					name: 'Весільний букет',				
+					productsClass: '3',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					from: true,
 					currentPrice: 999,
 					photos: 3
+				},
+				{	
+					name: 'Весільний букет',				
+					productsClass: '4',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 1
+				},
+				{	
+					name: 'Весільний букет',				
+					productsClass: '5',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 2
+				},
+				{	
+					name: 'Весільний букет',				
+					productsClass: '6',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: 'Весільний букет',				
+					productsClass: '7',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 1
+				},
+				{	
+					name: 'Весільний букет',				
+					productsClass: '8',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 4
+				},
+				{	
+					name: 'Весільний букет',				
+					productsClass: '9',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: '5 червоних троянд',				
+					productsClass: '5_roz_60_red',
+					isAction: '',
+					isNovelty: '60',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: '5 білих троянд',				
+					productsClass: '5_roz_60_white',
+					isAction: '',
+					isNovelty: '60',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: '11 червоних троянд',				
+					productsClass: '11_roz_60_red',
+					isAction: '',
+					isNovelty: '60',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 4
+				},
+				{	
+					name: '11 білих троянд',				
+					productsClass: '11_roz_60_white',
+					isAction: '',
+					isNovelty: '60',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: '11 червоних троянд',				
+					productsClass: '11_roz_70_red',
+					isAction: '',
+					isNovelty: '70',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 4
+				},
+				{	
+					name: '11 білих троянд',				
+					productsClass: '11_roz_70_white',
+					isAction: '',
+					isNovelty: '70',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: '25 червоних троянд',				
+					productsClass: '25_roz_60_red',
+					isAction: '',
+					isNovelty: '60',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: '25 білих троянд',				
+					productsClass: '25_roz_60_white',
+					isAction: '',
+					isNovelty: '60',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: '25 червоних троянд',				
+					productsClass: '25_roz_70_red',
+					isAction: '',
+					isNovelty: '70',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 5
+				},
+				{	
+					name: '25 білих троянд',			
+					productsClass: '25_roz_70_white',
+					isAction: '',
+					isNovelty: '70',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 4
+				},
+				{	
+					name: '25 троянд',				
+					productsClass: '25_roz_70_pink',
+					isAction: '',
+					isNovelty: '70',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 3
+				},
+				{	
+					name: '101 червона троянда',				
+					productsClass: '101_roz_80_red',
+					isAction: '',
+					isNovelty: '80',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 4
+				},
+				{	
+					name: '101 біла троянда',				
+					productsClass: '101_roz_80_white',
+					isAction: '',
+					isNovelty: '80',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 999,
+					photos: 4
 				}
 			]			
 		},
