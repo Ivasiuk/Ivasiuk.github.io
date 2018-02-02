@@ -8,344 +8,326 @@ $(document).ready(function() {
 			descriptText: 'Весільний букет нареченої - невід\'ємна частина весільного образу, який надає особливу романтичність і ніжність дівчині в шлюбній сукні. Важлива роль букету в день весілля підкреслює готовність молодої дівчини одружитися, коли вона приймає флористичне диво з рук свого коханого, передаючи свою естафету щасливої ​​нареченої однієї зі своїх незаміжніх подруг в кінці вечора.',			descriptId: 'demo_wedding',
 			sectionClass: 'wedding',
 			products: [
-				{	name: 'Букет 11 троянд ',
+				{	name: 'Весільні букети',
 					productsClass: '1',
-					isAction: '',
-					isNovelty: '',
+					isAction: '',  /* 'action', 'hit' */
+					isNovelty: '',  /* 'new', 60, 70, 80, 100 */
 					oldPrice: 12+5,
 					currentPrice: 5,
-					photos: ['m', '1', '2', '3', '4', '5', '6', '7']
+					photos: 41
 				},
 				{					
+					name: 'Оздоблення авто',
 					productsClass: '2',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3', '4', '5']
-				},{					
+					photos: 20
+				},{	
+					name: 'Оформлення залів',				
 					productsClass: '3',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3', '4', '5']
-				},{					
+					photos: 25
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '4',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3', '4', '5', '6']
-				},{					
+					photos: 4
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '5',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
-				},{					
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '6',
 					isAction: '',
 					isNovelty: '37',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '7',
 					isAction: '',
 					isNovelty: '100',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '8',
 					isAction: '',
 					isNovelty: '100',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					name: 'Оздоблення авто ',
+					photos: 9
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '9',
 					isAction: '',
 					isNovelty: 'new',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14']
-				},{					
+					photos: 5
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '10',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']
-				},{					
+					photos: 5
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '11',
 					isAction: 'hit',
 					isNovelty: '80',
 					oldPrice: '',
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3', '4', '5', '6', '7']
-				},{					
+					photos: 7
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '12',
 					isAction: 'action',
 					isNovelty: '60',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '13',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 7
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '14',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 7
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '15',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '16',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '17',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 4
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '18',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '19',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '20',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '21',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16']
-				},{					
+					photos: 16
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '22',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
-				},{					
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '23',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
-				},{					
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '24',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '25',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '26',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '27',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '28',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2']
-				},{					
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
 					productsClass: '29',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3', '4', '5', '6']
-				},{					
-					productsClass: '13',
+					photos: 6
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '30',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '31',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 5
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '32',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '33',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '34',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 4
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '35',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 4
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '36',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '37',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '38',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 2
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '39',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
+					photos: 3
+				},{	
+					name: 'Весільний букет',				
+					productsClass: '40',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					currentPrice: 999,
-					photos: ['m', '1']
-				},{					
-					productsClass: '13',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					currentPrice: 999,
-					photos: ['m', '1']
+					photos: 7
 				}
 			]
 		},
@@ -369,16 +351,17 @@ $(document).ready(function() {
 					isNovelty: '',
 					oldPrice: 12+5,
 					currentPrice: 5,
-					photos: ['m', '1', '2', '3', '4']
+					photos: 4
 				},
-				{					
+				{	
+					name: 'Весільний букет',				
 					productsClass: '25_roz',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					from: true,
 					currentPrice: 999,
-					photos: ['m', '1', '2', '3']
+					photos: 3
 				}
 			]			
 		},
@@ -484,14 +467,13 @@ $(document).ready(function() {
 
 		/* Searching popup photo's arraj */
 
-	function popupPhotoArray(array, sect, prod){
+	function popupphotosCount(array, sect, prod){
 		var j = array.filter(function(number){
 			return number.sectionClass == sect;
 		})[0].products.filter(function(number){
 			return number.productsClass == prod;
 		})[0];
-			j.photos ? j = j.photos.filter(function(number){
-			return number !== 'm'}) : j = undefined;		
+				
 		return j;
 	};	
 
@@ -513,6 +495,7 @@ $(document).ready(function() {
 		console.log(this);
 		name.html(objProd.name);
 		a.attr('data-')
+		objProd.name ? name.removeClass('no_opasity') : name.addClass('no_opasity');
 		objProd.isAction ? action.removeClass('hidden').attr('src', 'img/' + objProd.isAction + '.png') : action.addClass('hidden');
 		objProd.isNovelty ? novelty.removeClass('hidden').attr('src', 'img/' + objProd.isNovelty + '.png') : novelty.addClass('hidden');
 		objProd.oldPrice ? oldPrice.html(objProd.oldPrice + ' грн') : oldPrice.addClass('hidden');
@@ -645,16 +628,6 @@ $(document).ready(function() {
         }, 1500);       
     });
 
-   		/* Changing popup-image height  function */
-
-   	function changeHeight(im){
-   		if (im.outerHeight() > ($(window).height() * 0.85)){
-		    $('.modal_product .photos').addClass('w-500');
-		} else {
-			$('.modal_product .photos').removeClass('w-500');
-		}
-   	};
-
 
    		/* Button "Up" */
 
@@ -699,6 +672,7 @@ $(document).ready(function() {
 		            i = this.images.length - 1;
 		        }	       
 		        $(this.images[i]).show();
+		        console.dir(this.images[i])
 		    }
 		    this.next = function () {
 		         $(this.images[i]).hide();
@@ -729,9 +703,9 @@ $(document).ready(function() {
 	            if(ph){
 	            	var modal_photos = $('.modal_product .photos .images_wrap');
 	            	$('.modal_product .photos img').remove();
-	            	ph.forEach(function(item, i, arr){
-	            		modal_photos.append($('<img>').addClass('load').attr('src', 'img/sections/' + s + '/' + pr + '/' + item + '.jpg').attr('alt', 'Photo'));
-	            	})	 
+	            	for(var i = 1; i < ph+1; i++ ){
+	            		modal_photos.append($('<img>').addClass('load').attr('src', 'img/sections/' + s + '/' + pr + '/' + i + '.jpg').attr('alt', 'Photo'));
+	            	}	 
 	            	$($('.modal_product .photos img.load')[0]).show();           
 	            }	
 	            popupSlider();
@@ -755,8 +729,10 @@ $(document).ready(function() {
 				e.preventDefault();
 				var section = $(e.target.closest('section')).attr('data-section');
 				var product = $(e.target.closest('.products_block')).attr('data-product');
-				var photoArray = popupPhotoArray(mainArray, section, product);
-				p.open(photoArray, product, section);
+				var photosCount = popupphotosCount(mainArray, section, product).photos;
+				p.open(photosCount, product, section);
+				
+
 			});	
 	           
 	})();

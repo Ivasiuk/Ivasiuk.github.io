@@ -861,6 +861,10 @@ footer .footer_bg{
     display: block;
 }
 
+.no_opasity{
+    opacity: 0;
+}
+
 .modal_product .photos{
     position: relative;
     height: 100%;
@@ -889,6 +893,14 @@ footer .footer_bg{
     max-height: 90%;
     transition: opacity 1s;
     box-shadow: 0 1px 17px #000;
+    border: 1px solid #fff;
+}
+
+.modal_product .photos .load:after{
+    content: 'rtrrth'; 
+    z-index: 99999;
+    color: #fff;
+
 }
 
 .modal_product .photos img.showed{
@@ -944,17 +956,19 @@ footer .footer_bg{
 
 
 .modal_product .left .arrow{
-    background: url(../img/left.png) no-repeat center;    
+    background: url(../img/arrow-left.png) no-repeat center;    
     background-size: contain;
+    cursor: pointer;
 }
 
 .modal_product .right .arrow{
-    background: url(../img/right.png) no-repeat center;    
+    background: url(../img/arrow-right.png) no-repeat center;    
     background-size: contain;
+    cursor: pointer;
 }
 
 .modal_product .arrow{
-    width: 80%;
+    width: 98%;
     height: 140px;
     margin: auto;    
 }
