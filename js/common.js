@@ -473,7 +473,7 @@ $(document).ready(function() {
 					oldPrice: 0,
 					from: true,
 					currentPrice: 999,
-					photos: 4
+					photos: 5
 				},
 				{	
 					name: '11 білих троянд',				
@@ -493,7 +493,7 @@ $(document).ready(function() {
 					oldPrice: 0,
 					from: true,
 					currentPrice: 999,
-					photos: 3
+					photos: 5
 				},
 				{	
 					name: '25 білих троянд',				
@@ -513,7 +513,7 @@ $(document).ready(function() {
 					oldPrice: 0,
 					from: true,
 					currentPrice: 999,
-					photos: 5
+					photos: 7
 				},
 				{	
 					name: '25 білих троянд',			
@@ -557,21 +557,325 @@ $(document).ready(function() {
 				}
 			]			
 		},
-		{	name: 'Букети',
-			id: 'bouquet',
-			descriptText: 'Всі букети, представлені в каталозі нашої компанії, відрізняються стильним зовнішнім виглядом і просто фантастично красиві. </br>Велику цікавість представляють авторські роботи, складені з різних квітів і флористичної зелені. Ці композиції дуже подобаються нашим клієнтам - вони оригінальні і представляють своєрідне відображення внутрішнього світу автора. При бажанні купити квіти недорого, розраховуючи при цьому на неповторність подарунка.',
-			descriptId: 'demo_bouquet',
-			sectionClass: 'bouquet',
-			isAction: '',
-			isNovelty: ''
+		{	name: 'Букети мікс',
+			id: 'mix',
+			descriptText: 'Всі букети, представлені в каталозі нашого магазину, відрізняються стильним зовнішнім виглядом і просто фантастично красиві. </br>Велику цікавість представляють авторські роботи, складені з різних квітів і флористичної зелені. Ці композиції дуже подобаються нашим клієнтам - вони оригінальні і представляють своєрідне відображення внутрішнього світу автора. </br>При бажанні купити квіти недорого, розраховуючи при цьому на неповторність подарунка.',
+			descriptId: 'demo_mix',
+			sectionClass: 'mix',
+			products: [
+				{	name: ' ',
+					productsClass: '1',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 2
+				},
+				{	name: '',
+					productsClass: '2',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '3',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '4',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 7
+				},
+				{	name: '',
+					productsClass: '5',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '6',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '7',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 4
+				},
+				{	name: '',
+					productsClass: '8',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 2
+				},
+				{	name: '',
+					productsClass: '9',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '10',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '11',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '12',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '13',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '14',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '15',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '16',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '17',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '18',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '19',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '20',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '21',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '22',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '23',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 2
+				},
+				{	name: '',
+					productsClass: '24',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 2
+				},
+				{	name: '',
+					productsClass: '25',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '26',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '27',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				}
+			]	
 		},
-		{	name: 'Серце з троянд',
-			id: 'heart',
-			descriptText: 'Букети з троянд у вигляді серця - оригінальний подарунок коханій людині! Це не просто купити квіти, а передати цілу бурю емоцій! </br>Кожна композиція квітів - це шедевр наших флористів. Магазин квітів "Квітоманія" - Ваш особистий помічник в складанні будь-якої складності композицій! ',
-			descriptId: 'demo_heart',
-			sectionClass: 'heart',
-			isAction: '',
-			isNovelty: ''
+		{	name: 'Квіти в коробці',
+			id: 'flower_box',
+			riptText: 'Квіти в коробці - це новий, найоригінальніший і красивий варіант подарунка для рідних і близьких людей. Тенденція дарувати букети в коробках прийшла в нашу країну зовсім недавно і родом вона з Європи. На даний момент такий подарунок вважається найромантичнішим для коханих дівчат і дружин. </br>Існують різні варіанти складання композицій в капелюшних коробках. Наш магазин пропонує величезний вибір коробок різних розмірів і колірної гами, які можна наповнити великим асортиментом свіжозрізаних квітів. </br>Наші професійні флористи допоможуть підібрати коробку з огляду на всі Ваші побажання, а також оформлять Ваш букет максимально незвично і оригінально.',
+			descriptId: 'demo_flower_box',
+			sectionClass: 'flower_box',
+			products: [
+				{	name: ' ',
+					productsClass: '1',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '2',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '3',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '4',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '5',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 1
+				},
+				{	name: '',
+					productsClass: '6',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '7',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '8',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '9',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '10',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				},
+				{	name: '',
+					productsClass: '11',
+					isAction: '',
+					isNovelty: '',
+					oldPrice: 12+5,
+					currentPrice: 5,
+					photos: 3
+				}
+			]	
 		},
 		{	name: 'квіти  в коробці',
 			id: 'flower_box',
@@ -610,11 +914,6 @@ $(document).ready(function() {
 		}
 	];	
 
-	(function(){
-		mainArray.forEach(function(item, i, arr){
-			item.products ? item.products[0].currentPrice = item.products[0].oldPrice + 100 : '';
-		})
-	})()
 
 		/* The main function*/
 	
@@ -684,7 +983,6 @@ $(document).ready(function() {
 		cl = objProd.productsClass;
 
 		img.attr('src', 'img/sections/' + section + '/' + cl + '/m.jpg');
-		console.log(this);
 		name.html(objProd.name);
 		a.attr('data-')
 		objProd.name ? name.removeClass('no_opasity') : name.addClass('no_opasity');
@@ -864,7 +1162,6 @@ $(document).ready(function() {
 		            i = this.images.length - 1;
 		        }	       
 		        $(this.images[i]).show();
-		        console.dir(this.images[i])
 		    }
 		    this.next = function () {
 		         $(this.images[i]).hide();
@@ -895,6 +1192,7 @@ $(document).ready(function() {
 	            if(ph){
 	            	var modal_photos = $('.modal_product .photos .images_wrap');
 	            	$('.modal_product .photos img').remove();
+	            	ph < 2 ? $('.arrow').addClass('hidden') : $('.arrow').removeClass('hidden'); 
 	            	for(var i = 1; i < ph+1; i++ ){
 	            		modal_photos.append($('<img>').addClass('load').attr('src', 'img/sections/' + s + '/' + pr + '/' + i + '.jpg').attr('alt', 'Photo'));
 	            	}	 
