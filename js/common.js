@@ -12,9 +12,10 @@ $(document).ready(function() {
 					productsClass: '1',
 					isAction: '',  /* 'action', 'hit' */
 					isNovelty: '',  /* 'new', 60, 70, 80, 100 */
-					oldPrice: 12+5,
-					currentPrice: 5,
-					photos: 40
+					oldPrice: '',
+					from: true,
+					currentPrice: 890,
+					photos: 41
 				},
 				{					
 					name: 'Оздоблення авто',
@@ -22,7 +23,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 490,
 					photos: 20
 				},{	
 					name: 'Оформлення залів',				
@@ -30,7 +32,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 390,
 					photos: 25
 				},{	
 					name: 'Весільний букет',				
@@ -38,7 +41,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 590,
 					photos: 4
 				},{	
 					name: 'Весільний букет',				
@@ -46,7 +50,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1390,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
@@ -54,31 +59,35 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '37',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1190,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
 					productsClass: '7',
 					isAction: '',
-					isNovelty: '100',
+					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1390,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
 					productsClass: '8',
 					isAction: '',
-					isNovelty: '100',
+					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1690,
 					photos: 9
 				},{	
 					name: 'Весільний букет',				
 					productsClass: '9',
 					isAction: '',
-					isNovelty: 'new',
+					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1390,
 					photos: 5
 				},{	
 					name: 'Весільний букет',				
@@ -86,7 +95,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1190,
 					photos: 5
 				},{	
 					name: 'Весільний букет',				
@@ -94,15 +104,17 @@ $(document).ready(function() {
 					isAction: 'hit',
 					isNovelty: '80',
 					oldPrice: '',
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1390,
 					photos: 7
 				},{	
 					name: 'Весільний букет',				
 					productsClass: '12',
-					isAction: 'action',
-					isNovelty: '60',
+					isAction: '',
+					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 000,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -110,7 +122,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1690,
 					photos: 7
 				},{	
 					name: 'Весільний букет',				
@@ -118,7 +131,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 2090,
 					photos: 7
 				},{	
 					name: 'Весільний букет',				
@@ -126,7 +140,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 990,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -134,7 +149,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1790,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -142,7 +158,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1290,
 					photos: 4
 				},{	
 					name: 'Весільний букет',				
@@ -150,7 +167,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1390,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -158,7 +176,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1190,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -166,7 +185,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1390,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -174,7 +194,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1490,
 					photos: 16
 				},{	
 					name: 'Весільний букет',				
@@ -182,7 +203,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 00,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
@@ -190,7 +212,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 00,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
@@ -198,7 +221,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 00,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -206,7 +230,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 00,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
@@ -214,7 +239,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 890,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
@@ -222,7 +248,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1490,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -230,7 +257,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1390,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -238,7 +266,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 490,
 					photos: 6
 				},{	
 					name: 'Весільний букет',				
@@ -246,7 +275,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 890,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
@@ -254,7 +284,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1190,
 					photos: 5
 				},{	
 					name: 'Весільний букет',				
@@ -262,7 +293,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1390,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
@@ -270,7 +302,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1190,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -278,7 +311,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 990,
 					photos: 4
 				},{	
 					name: 'Весільний букет',				
@@ -286,7 +320,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1290,
 					photos: 4
 				},{	
 					name: 'Весільний букет',				
@@ -294,7 +329,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 690,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -302,7 +338,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 990,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -310,7 +347,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 2090,
 					photos: 2
 				},{	
 					name: 'Весільний букет',				
@@ -318,7 +356,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1590,
 					photos: 3
 				},{	
 					name: 'Весільний букет',				
@@ -326,7 +365,8 @@ $(document).ready(function() {
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
-					currentPrice: 999,
+					from: true,
+					currentPrice: 1590,
 					photos: 7
 				}
 			]
@@ -337,102 +377,73 @@ $(document).ready(function() {
 			descriptId: 'demo_rose',
 			sectionClass: 'roses',
 			products: [
-				{	name: 'Букет 11 троянд ',
+				{	name: '101 трояндa міх',
 					productsClass: '1',
 					isAction: '',
-					isNovelty: '',
-					oldPrice: 12+5,
-					currentPrice: 5,
+					isNovelty: '70',
+					oldPrice: 0,
+					from: true,
+					currentPrice: 3990,
 					photos: 5
 				},
 				{	
-					name: 'Весільний букет',				
+					name: '55 троянд penny line',				
 					productsClass: '2',
 					isAction: '',
-					isNovelty: '',
+					isNovelty: '60',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 1890,
 					photos: 1
 				},
 				{	
-					name: 'Весільний букет',				
+					name: '31 трояндa talea',				
 					productsClass: '3',
 					isAction: '',
-					isNovelty: '',
+					isNovelty: '100',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
-					photos: 3
+					currentPrice: 4990,
+					photos: 5
 				},
 				{	
-					name: 'Весільний букет',				
+					name: '',				
 					productsClass: '4',
 					isAction: '',
 					isNovelty: '',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
-					photos: 1
+					currentPrice: 0,
+					photos: 3
 				},
 				{	
-					name: 'Весільний букет',				
+					name: '25 троянд red naomi',				
 					productsClass: '5',
 					isAction: '',
-					isNovelty: '',
+					isNovelty: '70',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 790,
 					photos: 2
 				},
 				{	
-					name: 'Весільний букет',				
-					productsClass: '6',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					from: true,
-					currentPrice: 999,
-					photos: 3
-				},
-				{	
-					name: 'Весільний букет',				
-					productsClass: '7',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					from: true,
-					currentPrice: 999,
-					photos: 1
-				},
-				{	
-					name: 'Весільний букет',				
+					name: '55 троянд la perla',				
 					productsClass: '8',
 					isAction: '',
-					isNovelty: '',
+					isNovelty: '70',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 1990,
 					photos: 4
 				},
 				{	
-					name: 'Весільний букет',				
-					productsClass: '9',
-					isAction: '',
-					isNovelty: '',
-					oldPrice: 0,
-					from: true,
-					currentPrice: 999,
-					photos: 3
-				},
-				{	
-					name: '5 червоних троянд',				
+					name: '5 троянд red naomi',				
 					productsClass: '5_roz_60_red',
 					isAction: '',
 					isNovelty: '60',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 149,
 					photos: 3
 				},
 				{	
@@ -442,7 +453,7 @@ $(document).ready(function() {
 					isNovelty: '60',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 159,
 					photos: 3
 				},
 				{	
@@ -452,7 +463,7 @@ $(document).ready(function() {
 					isNovelty: '60',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 329,
 					photos: 4
 				},
 				{	
@@ -462,7 +473,7 @@ $(document).ready(function() {
 					isNovelty: '60',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 329,
 					photos: 3
 				},
 				{	
@@ -472,7 +483,7 @@ $(document).ready(function() {
 					isNovelty: '70',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 339,
 					photos: 5
 				},
 				{	
@@ -482,7 +493,7 @@ $(document).ready(function() {
 					isNovelty: '70',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 339,
 					photos: 3
 				},
 				{	
@@ -492,7 +503,7 @@ $(document).ready(function() {
 					isNovelty: '60',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 379,
 					photos: 5
 				},
 				{	
@@ -502,7 +513,7 @@ $(document).ready(function() {
 					isNovelty: '60',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 379,
 					photos: 3
 				},
 				{	
@@ -512,7 +523,7 @@ $(document).ready(function() {
 					isNovelty: '70',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 389,
 					photos: 7
 				},
 				{	
@@ -522,7 +533,7 @@ $(document).ready(function() {
 					isNovelty: '70',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 389,
 					photos: 4
 				},
 				{	
@@ -532,7 +543,7 @@ $(document).ready(function() {
 					isNovelty: '70',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 389,
 					photos: 3
 				},
 				{	
@@ -542,7 +553,7 @@ $(document).ready(function() {
 					isNovelty: '80',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 1590,
 					photos: 4
 				},
 				{	
@@ -552,7 +563,7 @@ $(document).ready(function() {
 					isNovelty: '80',
 					oldPrice: 0,
 					from: true,
-					currentPrice: 999,
+					currentPrice: 1590,
 					photos: 4
 				}
 			]			
@@ -567,7 +578,8 @@ $(document).ready(function() {
 					productsClass: '1',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -575,7 +587,8 @@ $(document).ready(function() {
 					productsClass: '2',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -583,7 +596,8 @@ $(document).ready(function() {
 					productsClass: '3',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -591,7 +605,8 @@ $(document).ready(function() {
 					productsClass: '4',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 7
 				},
@@ -599,7 +614,8 @@ $(document).ready(function() {
 					productsClass: '5',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -607,7 +623,8 @@ $(document).ready(function() {
 					productsClass: '6',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -615,7 +632,8 @@ $(document).ready(function() {
 					productsClass: '7',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 4
 				},
@@ -623,7 +641,8 @@ $(document).ready(function() {
 					productsClass: '8',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -631,7 +650,8 @@ $(document).ready(function() {
 					productsClass: '9',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -639,7 +659,8 @@ $(document).ready(function() {
 					productsClass: '10',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -647,7 +668,8 @@ $(document).ready(function() {
 					productsClass: '11',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -655,7 +677,8 @@ $(document).ready(function() {
 					productsClass: '12',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -663,7 +686,8 @@ $(document).ready(function() {
 					productsClass: '13',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -671,7 +695,8 @@ $(document).ready(function() {
 					productsClass: '14',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -679,7 +704,8 @@ $(document).ready(function() {
 					productsClass: '15',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -687,7 +713,8 @@ $(document).ready(function() {
 					productsClass: '16',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -695,7 +722,8 @@ $(document).ready(function() {
 					productsClass: '17',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -703,7 +731,8 @@ $(document).ready(function() {
 					productsClass: '18',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -711,7 +740,8 @@ $(document).ready(function() {
 					productsClass: '19',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -719,7 +749,8 @@ $(document).ready(function() {
 					productsClass: '20',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -727,7 +758,8 @@ $(document).ready(function() {
 					productsClass: '21',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -735,7 +767,8 @@ $(document).ready(function() {
 					productsClass: '22',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -743,7 +776,8 @@ $(document).ready(function() {
 					productsClass: '23',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -751,7 +785,8 @@ $(document).ready(function() {
 					productsClass: '24',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -759,7 +794,8 @@ $(document).ready(function() {
 					productsClass: '25',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -767,7 +803,8 @@ $(document).ready(function() {
 					productsClass: '26',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -775,7 +812,8 @@ $(document).ready(function() {
 					productsClass: '27',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				}
@@ -791,7 +829,8 @@ $(document).ready(function() {
 					productsClass: '1',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -799,7 +838,8 @@ $(document).ready(function() {
 					productsClass: '2',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -807,7 +847,8 @@ $(document).ready(function() {
 					productsClass: '3',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -815,7 +856,8 @@ $(document).ready(function() {
 					productsClass: '4',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -823,7 +865,8 @@ $(document).ready(function() {
 					productsClass: '5',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -831,7 +874,8 @@ $(document).ready(function() {
 					productsClass: '6',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -839,7 +883,8 @@ $(document).ready(function() {
 					productsClass: '7',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -847,7 +892,8 @@ $(document).ready(function() {
 					productsClass: '8',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -855,7 +901,8 @@ $(document).ready(function() {
 					productsClass: '9',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -863,7 +910,8 @@ $(document).ready(function() {
 					productsClass: '10',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -871,7 +919,8 @@ $(document).ready(function() {
 					productsClass: '11',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -879,7 +928,8 @@ $(document).ready(function() {
 					productsClass: '12',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -887,7 +937,8 @@ $(document).ready(function() {
 					productsClass: '2',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				}
@@ -903,7 +954,8 @@ $(document).ready(function() {
 					productsClass: '1',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -911,7 +963,8 @@ $(document).ready(function() {
 					productsClass: '2',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -919,7 +972,8 @@ $(document).ready(function() {
 					productsClass: '3',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -927,7 +981,8 @@ $(document).ready(function() {
 					productsClass: '4',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -935,7 +990,8 @@ $(document).ready(function() {
 					productsClass: '5',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -943,7 +999,8 @@ $(document).ready(function() {
 					productsClass: '6',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -951,7 +1008,8 @@ $(document).ready(function() {
 					productsClass: '7',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				}
@@ -967,7 +1025,8 @@ $(document).ready(function() {
 					productsClass: '1',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 4
 				},
@@ -975,7 +1034,8 @@ $(document).ready(function() {
 					productsClass: '2',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -983,7 +1043,8 @@ $(document).ready(function() {
 					productsClass: '3',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 9
 				},
@@ -991,7 +1052,8 @@ $(document).ready(function() {
 					productsClass: '4',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -1007,7 +1069,8 @@ $(document).ready(function() {
 					productsClass: '1',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -1015,7 +1078,8 @@ $(document).ready(function() {
 					productsClass: '2',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -1023,7 +1087,8 @@ $(document).ready(function() {
 					productsClass: '3',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -1031,7 +1096,8 @@ $(document).ready(function() {
 					productsClass: '4',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -1039,7 +1105,8 @@ $(document).ready(function() {
 					productsClass: '5',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -1047,7 +1114,8 @@ $(document).ready(function() {
 					productsClass: '6',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 3
 				},
@@ -1055,7 +1123,8 @@ $(document).ready(function() {
 					productsClass: '7',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 2
 				},
@@ -1063,7 +1132,8 @@ $(document).ready(function() {
 					productsClass: '8',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 1
 				},
@@ -1071,7 +1141,8 @@ $(document).ready(function() {
 					productsClass: '9',
 					isAction: '',
 					isNovelty: '',
-					oldPrice: 12+5,
+					oldPrice: 0,
+					from: true,
 					currentPrice: 5,
 					photos: 6
 				}

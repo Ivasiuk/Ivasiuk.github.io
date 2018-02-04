@@ -515,12 +515,14 @@ section.row1{
 }
 
 .row1 .products_block .product-price{
+    color: black;
     width: 100%;
     bottom: 138px;
     margin-left: -13px;
     position: absolute;
-    font-size: 30px;
+    font-size: 27px;
     line-height: 40px;
+    font-style: italic;
 }
 
 .row1 .products_block .product_name{
@@ -988,13 +990,15 @@ footer .footer_bg{
 }
 
 .modal_product .close{
+    background: url(../img/close-button2.png) no-repeat center;
+    background-size: contain;
     display: block;
     height: 40px;
-    width: 105px;
+    width: 70px;
     padding: 0 auto;
     text-align: center;
     top: 70px;
-    right: 21px;
+    right: 4%;
     float: right;
     font-size: 2em;
     line-height: 1;
